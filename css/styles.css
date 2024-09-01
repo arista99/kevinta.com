@@ -1,10 +1,12 @@
 :root{
     --blanco: #ffffff;
     --oscuro: #212121;
+    --titulo: #000;
     --primario: #ffc107;
-    --secundario: #0097a4;
+    --secundario: #3d74f3;
+    --terciario: #7cf970;
     --gris: #757575;
-    --grisClaro: #DFE9F3;
+    --azulClaro: #0033f970;
 
     --fuente-principal: 3.8rem;
 }
@@ -25,8 +27,8 @@ html{
 }
 body{
     font-size: 16px; /* 1rem = 10px */
-    font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%);
+    font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+    /* background-image: linear-gradient(to top, var(--azulClaro) 0%, var(--blanco) 100%); */
 }
 .sombra{
     box-shadow: 0px 5px 15px 0px rgba(112, 112, 112, 0.54);
@@ -46,13 +48,25 @@ h3{
 }
 h1,h2,h3{
     text-align: center;
-    color: var(--secundario);
+    color: var(--titulo);
 }
 .titulo span{
     font-size: 2rem;
 }
 span{
     font-size: 2rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+}
+@media (min-width: 768px) {
+    .encabezados {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 .contenedor{
     max-width: 110rem;
@@ -150,7 +164,7 @@ span{
 
     .informaciones{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 1fr;
     }
 
@@ -185,8 +199,8 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--grisClaro);
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    width: 32rem;
+    box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.15);
 }
 
 .habilidad__img img{
@@ -208,7 +222,7 @@ span{
     text-align: justify;
     margin: 0px auto;
     border-radius: 5px;
-    background-color: var(--grisClaro);
+    background-color: var(--azulClaro);
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
 }
 
@@ -226,67 +240,42 @@ span{
     flex-direction: column;
     align-items: center;
     margin-bottom: 5rem;
+    border-radius: 1.5rem;
+    background-color: var(--azulClaro);
 }
 
 .informacion__yo{
     width: auto;
-    height: 10rem;
-    padding: 1rem;
+    /* height: 10rem; */
+    padding: 0rem 1rem 0rem 1rem;
     text-align: justify;
-    margin: 0px auto;
-    border-radius: 5px;
-    background-color: var(--grisClaro);
-    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    margin: 0px auto; 
+    font-size: 20px;
+    /* background-color: var(--azulClaro); */
+    /* box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15); */
 }
-
-.servicio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.servicio h3{
-    color: var(--secundario);
-    font-weight: normal;
-}
-
-.servicio p{
-    line-height: 2;
-    text-align: center;
-}
-
-.servicio .iconos{
-    height: 15rem;
-    width: 15rem;
-    background-color: var(--primario);
-    border-radius: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
 
 /**CONTACTO**/
-.formulario{
-    background-color: var(--gris);
-    width: min(60rem, 100%); /**Utilizar el vamos mas pequeño**/
-    margin: 0 auto; /*Sin padre display flex*/
-    padding: 2rem;
-    border-radius: 1rem;
-}
+/*formulario
+    /*background-color: var(--gris);
+    /*width: min(60rem, 100%); Utilizar el vamos mas pequeño
+    /*margin: 0 auto; Sin padre display flex
+    /*padding: 2rem;
+    /*border-radius: 1rem;
+*/
 
-.formulario fieldset{
+/* .formulario fieldset{
     border: none;
-}
+} */
 
-.formulario legend{
+/* .formulario legend{
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 2rem;
     color: var(--primario);
-}
+} */
 
 
 @media (min-width: 768px){
@@ -357,3 +346,77 @@ Para la alineación o distribucion de los elementos que estarán dentro de conte
 CSS GRID
 Para definir el layour de tus sitio web como puede ser las columnas o contenedores de elementos
 **/
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.experiencia__tiempo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.experiencia__empresa{
+    font-size: 2rem;
+}
+
+.curriculum{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.15);
+}
+
+.btn_cu{
+        background-color: var(--secundario);
+        color: var(--blanco);
+        padding: 0.5rem 2rem;
+        margin: 0 1rem 0 1rem;
+        font-size: 2rem;
+        text-decoration: none;
+        /* text-transform: uppercase; */
+        font-weight: bold;
+        border-radius: .5rem;
+        width: 10%;
+        text-align: center;
+        border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+/* .curriculum__pdf{
+    border-radius: 1rem;
+    background-color: var(--azulClaro);
+    box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.15);
+} */
+
+/* .curriculum__portafolio{
+    border-radius: 1rem;
+    background-color: var(--azulClaro);
+    box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.15);
+} */
+
+@media (min-width: 768px) {
+    .experiencias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* margin: 0 10rem 0 10rem; */
+        column-gap: 1fr;
+    }
+
+    .btn_cu{
+        width: auto;
+    }
+    /* .curriculum{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1fr;
+    } */
+}
