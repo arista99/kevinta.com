@@ -19,8 +19,10 @@
     <div class="nav-links">
       <a href="#inicio">Inicio</a>
       <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
       <a href="#experiencia">Experiencia</a>
       <a href="#portafolio">Portafolio</a>
+      <a href="#clientes">Clientes</a>
       <a href="#contacto">Contacto</a>
     </div>
     <div class="nav-phone"><span>📞</span>970 838 672</div>
@@ -57,30 +59,32 @@
   <div class="divider"></div>
 
   <!-- SOBRE MI -->
-  <div style="padding: 6rem 4rem;">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center;max-width:1200px;margin:0 auto;"
-      class="fade-in" id="sobre-mi">
+  <div class="about-section">
+    <div class="fade-in" id="sobre-mi">
       <div>
         <div class="section-label">Sobre mí</div>
         <h2 class="section-title">Hola, soy <span
             style="background:linear-gradient(135deg,#4f6ef7,#7c5cfc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Kevin
             Torres</span></h2>
         <p class="section-desc" style="margin-bottom:1.5rem;">
-          Soy Kevin Torres Arista, un apasionado desarrollador software con trabajos en diseño web.
-          A través de mi portafolio, te invito a ver mi camino profesional y descubrir cómo mi
-          dedicación y habilidades pueden agregar valor a tus proyectos.
+          Soy desarrollador de software con más de 5 años trabajando para empresas de salud, comercio
+          y servicios. Construyo sistemas web a medida con Laravel y Livewire que resuelven procesos
+          reales del negocio: gestión de información, reportes, integraciones entre sistemas y
+          aplicaciones internas que los equipos usan todos los días.
         </p>
         <p class="section-desc">
-          Combino habilidades técnicas en PHP, JavaScript y CSS con herramientas de diseño como Figma,
-          entregando soluciones web completas desde el backend hasta la experiencia visual.
+          Me encargo del proyecto completo: entiendo cómo trabaja tu empresa, diseño la base de datos,
+          desarrollo la aplicación y la dejo funcionando en servidores Ubuntu. Hoy profundizo en DevOps
+          para automatizar despliegues y que cada sistema sea más estable y fácil de mantener.
         </p>
       </div>
       <div>
         <div class="about-card">
-          <div class="about-avatar">KT</div>
+          <img class="about-avatar" src="img/kevin-torres.jpg" width="120" height="120"
+            alt="Kevin Torres Arista, desarrollador web y analista de software en Lima, Perú">
           <div class="about-name">Kevin Torres Arista</div>
           <div class="about-role">Full Stack Developer & UX/UI Designer</div>
-          <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;">
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.7;">
             Basado en Perú · Disponible para colaboraciones remotas y presenciales.
           </p>
           <div class="about-stats">
@@ -89,7 +93,7 @@
               <div class="stat-label">Años de experiencia</div>
             </div>
             <div class="stat">
-              <div class="stat-number">2+</div>
+              <div class="stat-number">3+</div>
               <div class="stat-label">Proyectos completados</div>
             </div>
             <div class="stat">
@@ -108,6 +112,61 @@
 
   <div class="divider"></div>
 
+  <!-- SERVICIOS -->
+  <section id="servicios" class="fade-in" style="max-width:1200px;margin:0 auto;">
+    <div class="section-label">Servicios</div>
+    <h2 class="section-title">¿En qué puedo ayudarte?</h2>
+    <p class="section-desc">No solo construyo sistemas nuevos: también me hago cargo de los que tu empresa ya usa.</p>
+    <div class="services-grid">
+      <article class="service-card">
+        <div class="service-icon">🧩</div>
+        <h3 class="service-name">Desarrollo a medida</h3>
+        <p class="service-desc">Sistemas web, ERP, CRM, plataformas SaaS y aplicaciones internas construidas
+          según cómo trabaja tu empresa.</p>
+        <ul class="service-list">
+          <li>Aplicaciones web</li>
+          <li>ERP y CRM</li>
+          <li>SaaS</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3 class="service-name">Mejora de sistemas existentes</h3>
+        <p class="service-desc">Tomo el sistema que ya tienes, aunque lo haya hecho otra persona: corrijo errores,
+          agrego módulos y lo actualizo a versiones actuales.</p>
+        <ul class="service-list">
+          <li>Sistemas heredados</li>
+          <li>Nuevos módulos</li>
+          <li>Migración de versión</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">🛠️</div>
+        <h3 class="service-name">Soporte y mantenimiento</h3>
+        <p class="service-desc">Atención de incidencias, actualizaciones de seguridad y ajustes continuos para que
+          tu sistema no se quede obsoleto.</p>
+        <ul class="service-list">
+          <li>Corrección de errores</li>
+          <li>Actualizaciones</li>
+          <li>Soporte continuo</li>
+        </ul>
+      </article>
+      <article class="service-card">
+        <div class="service-icon">🚀</div>
+        <h3 class="service-name">Implementación</h3>
+        <p class="service-desc">Configuro el servidor, la base de datos y el despliegue para dejar el sistema
+          funcionando y listo para tu equipo.</p>
+        <ul class="service-list">
+          <li>Servidores Ubuntu</li>
+          <li>Base de datos</li>
+          <li>Puesta en producción</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
   <!-- HABILIDADES -->
   <div class="skill-section fade-in">
     <div class="section-wrap">
@@ -117,21 +176,33 @@
         <div class="skill-card">
           <div class="skill-icon">💻</div>
           <div class="skill-name">Desarrollo Web</div>
-          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">Backend y frontend con tecnologías
-            modernas y patrones profesionales.</p>
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.6;">Sistemas web con Laravel y Livewire:
+            aplicaciones internas, APIs y reportes conectados a bases de datos.</p>
           <div class="skill-tags">
+            <span class="tag tag-main">Laravel</span>
+            <span class="tag tag-main">Livewire</span>
             <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Oracle</span>
+            <span class="tag">APIs REST</span>
             <span class="tag">JavaScript</span>
             <span class="tag">HTML</span>
             <span class="tag">CSS</span>
             <span class="tag">SCSS</span>
             <span class="tag">MVC</span>
           </div>
+          <div class="skill-learning">
+            <span class="skill-learning-label">Profundizando en</span>
+            <div class="skill-tags">
+              <span class="tag tag-learning">Angular</span>
+              <span class="tag tag-learning">TypeScript</span>
+            </div>
+          </div>
         </div>
         <div class="skill-card">
           <div class="skill-icon">🎨</div>
           <div class="skill-name">Diseño UX/UI</div>
-          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">Creación de interfaces intuitivas y
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.6;">Creación de interfaces intuitivas y
             prototipos interactivos de alta fidelidad.</p>
           <div class="skill-tags">
             <span class="tag">Figma</span>
@@ -142,7 +213,7 @@
         <div class="skill-card">
           <div class="skill-icon">🧠</div>
           <div class="skill-name">Habilidades Blandas</div>
-          <p style="font-size:0.82rem;color:var(--text-muted);line-height:1.6;">Enfoque analítico para resolver
+          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.6;">Enfoque analítico para resolver
             problemas complejos con soluciones creativas.</p>
           <div class="skill-tags">
             <span class="tag">Análisis crítico</span>
@@ -488,6 +559,81 @@
 
   <div class="divider"></div>
 
+  <!-- CLIENTES -->
+  <section id="clientes" class="fade-in" style="max-width:1200px;margin:0 auto;">
+    <div class="section-label">Clientes</div>
+    <h2 class="section-title">Empresas que confiaron en mi trabajo</h2>
+    <!-- Bucle infinito: la lista se repite 3 veces para que el desplazamiento no deje huecos.
+         Las copias 2 y 3 son decorativas (aria-hidden) para que los lectores de pantalla no lean 3 veces. -->
+    <div class="clients-marquee">
+      <ul class="clients-track">
+        <li class="client-item">
+          <div class="client-logo"><img src="img/clientes/banquea.png" alt="Logo de Banquea"></div>
+          <span>Banquea</span>
+        </li>
+        <li class="client-item">
+          <div class="client-logo"><img src="img/clientes/multiservicios-sky.png" alt="Logo de Multiservicios Sky">
+          </div>
+          <span>Multiservicios Sky</span>
+        </li>
+        <li class="client-item">
+          <div class="client-logo"><img src="img/clientes/amautas-mineros.png" alt="Logo de Amautas Mineros"></div>
+          <span>Amautas Mineros</span>
+        </li>
+        <li class="client-item">
+          <div class="client-logo"><img src="img/clientes/pijorce.png" alt="Logo de Pijorce"></div>
+          <span>PIJORCE</span>
+        </li>
+        <li class="client-item">
+          <div class="client-logo"><img src="img/clientes/rywnago.png" alt="Logo de Rywnago"></div>
+          <span>R y W Nago</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/banquea.png" alt=""></div>
+          <span>Banquea</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/multiservicios-sky.png" alt=""></div>
+          <span>Multiservicios Sky</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/amautas-mineros.png" alt=""></div>
+          <span>Amautas Mineros</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/pijorce.png" alt=""></div>
+          <span>PIJORCE</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/rywnago.png" alt=""></div>
+          <span>R y W Nago</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/banquea.png" alt=""></div>
+          <span>Banquea</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/multiservicios-sky.png" alt=""></div>
+          <span>Multiservicios Sky</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/amautas-mineros.png" alt=""></div>
+          <span>Amautas Mineros</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/pijorce.png" alt=""></div>
+          <span>PIJORCE</span>
+        </li>
+        <li class="client-item" aria-hidden="true">
+          <div class="client-logo"><img src="img/clientes/rywnago.png" alt=""></div>
+          <span>R y W Nago</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
   <!-- CONTACTO -->
   <section id="contacto" class="fade-in" style="max-width:700px;margin:0 auto;text-align:center;">
     <div class="section-label" style="justify-content:center;">Contacto</div>
@@ -497,7 +643,7 @@
       ¡Contáctame para que podamos trabajar juntos y hacer realidad tu visión!
     </p>
     <div class="contact-card">
-      <p style="color:var(--text-muted);font-size:0.9rem;line-height:1.8;margin-bottom:1.5rem;">
+      <p style="color:var(--text-muted);font-size:1rem;line-height:1.8;margin-bottom:1.5rem;">
         ¡Gracias por visitar mi portafolio! Estoy emocionado por la oportunidad de contribuir
         a proyectos increíbles y aprender de nuevas experiencias.
       </p>

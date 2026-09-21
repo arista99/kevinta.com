@@ -1,13 +1,14 @@
 :root {
-    --bg: #0a0a0f;
-    --surface: #12121a;
-    --surface2: #1a1a26;
-    --accent: #4f6ef7;
+    /* Paleta azul marino (antes casi negro: #0a0a0f / #12121a / #1a1a26) */
+    --bg: #0b1628;
+    --surface: #11203a;
+    --surface2: #172a4a;
+    --accent: #6180fa; /* un poco más claro para mantener contraste sobre azul (antes #4f6ef7) */
     --accent2: #7c5cfc;
     --accent3: #00d4aa;
-    --text: #e8e8f0;
-    --text-muted: #7a7a9a;
-    --border: rgba(255, 255, 255, 0.07);
+    --text: #e8edf7;
+    --text-muted: #a9b8d0;
+    --border: rgba(148, 178, 255, 0.12);
     --glow: rgba(79, 110, 247, 0.15);
 }
 
@@ -21,13 +22,14 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 90px; /* que el menú fijo no tape el título al hacer clic en un enlace */
 }
 
 body {
     background: var(--bg);
     color: var(--text);
     font-family: 'DM Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -54,7 +56,7 @@ nav {
     align-items: center;
     padding: 1.2rem 4rem;
     backdrop-filter: blur(20px);
-    background: rgba(10, 10, 15, 0.8);
+    background: rgba(11, 22, 40, 0.82);
     border-bottom: 1px solid var(--border);
 }
 
@@ -72,7 +74,7 @@ nav {
 .nav-logo span {
     display: block;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     font-weight: 400;
     letter-spacing: 0.25em;
     text-transform: uppercase;
@@ -92,7 +94,7 @@ nav {
 .nav-links a {
     color: var(--text-muted);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 500;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -121,7 +123,7 @@ nav {
 
 .nav-phone {
     color: var(--text-muted);
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     letter-spacing: 0.05em;
 }
 
@@ -221,7 +223,7 @@ nav {
     border: 1px solid rgba(79, 110, 247, 0.3);
     border-radius: 100px;
     padding: 0.4rem 1rem;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: var(--accent);
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -270,7 +272,7 @@ nav {
 }
 
 .hero-sub {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-muted);
     max-width: 500px;
     line-height: 1.7;
@@ -291,7 +293,7 @@ nav {
     padding: 0.85rem 2rem;
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
@@ -315,7 +317,7 @@ nav {
     padding: 0.85rem 2rem;
     border-radius: 8px;
     font-family: 'DM Sans', sans-serif;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
@@ -341,7 +343,7 @@ nav {
     align-items: center;
     gap: 0.4rem;
     color: var(--text-muted);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     animation: fadeDown 1s 0.8s ease both;
@@ -391,7 +393,7 @@ section {
 }
 
 .section-label {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent);
@@ -419,7 +421,7 @@ section {
 
 .section-desc {
     color: var(--text-muted);
-    font-size: 1rem;
+    font-size: 1.125rem;
     line-height: 1.8;
     max-width: 600px;
 }
@@ -458,17 +460,14 @@ section {
 }
 
 .about-avatar {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     background: linear-gradient(135deg, var(--accent), var(--accent2));
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    font-weight: 900;
-    color: white;
+    display: block;
+    object-fit: cover;
+    object-position: center 20%;
+    border: 3px solid var(--border);
     margin-bottom: 1.5rem;
     box-shadow: 0 0 30px rgba(79, 110, 247, 0.4);
 }
@@ -482,7 +481,7 @@ section {
 
 .about-role {
     color: var(--accent);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
@@ -513,7 +512,7 @@ section {
 }
 
 .stat-label {
-    font-size: 0.72rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     margin-top: 0.2rem;
 }
@@ -561,7 +560,7 @@ section {
 
 .skill-name {
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -577,8 +576,41 @@ section {
     border: 1px solid var(--border);
     border-radius: 4px;
     padding: 0.15rem 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
+}
+
+/* Tecnología principal: resaltada con el acento */
+.tag-main {
+    background: rgba(97, 128, 250, 0.15);
+    border-color: rgba(97, 128, 250, 0.45);
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* En aprendizaje: borde punteado para distinguirlo de lo que ya dominas */
+.tag-learning {
+    background: transparent;
+    border: 1px dashed var(--accent3);
+    color: var(--accent3);
+}
+
+.skill-learning {
+    margin-top: 1.1rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--border);
+}
+
+.skill-learning-label {
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.skill-learning .skill-tags {
+    margin-top: 0.5rem;
 }
 
 /* ── TIMELINE / EXPERIENCIA ── */
@@ -662,7 +694,7 @@ section {
 }
 
 .timeline-period {
-    font-size: 0.72rem;
+    font-size: 0.85rem;
     color: var(--accent);
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -671,14 +703,14 @@ section {
 
 .timeline-role {
     font-family: 'Playfair Display', serif;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 0.2rem;
 }
 
 .timeline-company {
     color: var(--text-muted);
-    font-size: 0.85rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -699,7 +731,7 @@ section {
 }
 
 .timeline-desc li {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: var(--text-muted);
     display: flex;
     align-items: flex-start;
@@ -721,7 +753,7 @@ section {
     background: var(--surface2);
     border-radius: 6px;
     padding: 0.25rem 0.6rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
 }
 
@@ -759,20 +791,20 @@ section {
 
 .project-number {
     font-family: 'Playfair Display', serif;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: var(--text-muted);
     margin-bottom: 0.5rem;
 }
 
 .project-name {
     font-family: 'Playfair Display', serif;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
 .project-desc {
-    font-size: 0.85rem;
+    font-size: 1rem;
     color: var(--text-muted);
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -790,7 +822,7 @@ section {
     border: 1px solid rgba(79, 110, 247, 0.2);
     border-radius: 4px;
     padding: 0.15rem 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: var(--accent);
 }
 
@@ -799,7 +831,7 @@ section {
     align-items: center;
     gap: 0.4rem;
     color: var(--accent3);
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     text-decoration: none;
     font-weight: 500;
     transition: gap 0.2s;
@@ -847,7 +879,7 @@ section {
 }
 
 .slide-placeholder span {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-family: 'DM Sans', sans-serif;
     color: var(--text-muted);
     letter-spacing: 0.05em;
@@ -857,7 +889,7 @@ section {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(10, 10, 15, 0.7);
+    background: rgba(11, 22, 40, 0.7);
     border: 1px solid var(--border);
     color: var(--text);
     width: 32px;
@@ -952,7 +984,7 @@ section {
     padding: 0.8rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: transform 0.2s;
 }
@@ -993,7 +1025,7 @@ footer {
     text-align: center;
     padding: 2rem;
     color: var(--text-muted);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     border-top: 1px solid var(--border);
     letter-spacing: 0.05em;
 }
@@ -1034,6 +1066,255 @@ footer span {
     transform: translateY(0);
 }
 
+/* ── SERVICIOS ── */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.service-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 1.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.service-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+}
+
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.service-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.6rem;
+}
+
+.service-desc {
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+}
+
+.service-list {
+    list-style: none;
+    margin-top: auto;   /* empuja la lista al fondo: las 4 tarjetas quedan alineadas */
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+}
+
+.service-list li {
+    font-size: 0.95rem;
+    color: var(--text);
+    padding-left: 1.3rem;
+    position: relative;
+}
+
+.service-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent3);
+    font-weight: 600;
+}
+
+/* Menú con 7 enlaces: desde 1200px el teléfono ya no cabe (sigue en Contacto y WhatsApp) */
+@media (max-width: 1200px) {
+    nav {
+        padding: 1.1rem 2rem;
+    }
+
+    .nav-phone {
+        display: none;
+    }
+
+    .nav-logo {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    .nav-links {
+        gap: 1.6rem;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
+    }
+}
+
+/* Tablet: 2 columnas */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Menú en tablet: el teléfono no cabe (sigue disponible en Contacto) */
+    nav {
+        padding: 1.1rem 2rem;
+    }
+
+    .nav-phone {
+        display: none;
+    }
+
+    .nav-links {
+        gap: 1.6rem;
+    }
+
+    .nav-links a {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-logo {
+        flex-shrink: 0;
+        white-space: nowrap;
+    }
+
+    /* Tablet angosta: logo arriba y enlaces en una fila debajo, con aire entre ellos */
+    nav {
+        padding: 0.9rem 1.5rem;
+        flex-wrap: wrap;
+        row-gap: 0.5rem;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.3rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+        letter-spacing: 0.03em;
+    }
+
+    html {
+        scroll-padding-top: 120px;
+    }
+}
+
+/* Celular: 1 columna */
+@media (max-width: 600px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ── CLIENTES (bucle infinito) ── */
+.clients-marquee {
+    --logo-w: 200px;
+    --logo-h: 104px;
+    --gap: 1.5rem;
+    --speed: 30s;
+    margin-top: 2.5rem;
+    overflow: hidden;
+    /* desvanece los bordes para que los logos entren y salgan suave */
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.clients-track {
+    list-style: none;
+    display: flex;
+    width: max-content;
+    padding: 0.5rem 0 0.75rem;
+    animation: clients-scroll var(--speed) linear infinite;
+}
+
+/* pausa al pasar el mouse o al tocar, para poder leer */
+.clients-marquee:hover .clients-track,
+.clients-marquee:focus-within .clients-track {
+    animation-play-state: paused;
+}
+
+@keyframes clients-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(calc(-100% / 3)); }
+}
+
+.client-item {
+    flex: 0 0 var(--logo-w);
+    margin-right: var(--gap);   /* margen, no gap: así cada tercio mide lo mismo y el bucle no salta */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.client-logo {
+    width: 100%;
+    height: var(--logo-h);
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.client-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.client-item:hover .client-logo {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(97, 128, 250, 0.35);
+}
+
+.client-item span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* Si la persona tiene desactivadas las animaciones en su sistema: grilla fija, sin copias */
+@media (prefers-reduced-motion: reduce) {
+    .clients-marquee {
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+
+    .clients-track {
+        animation: none;
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--gap);
+    }
+
+    .client-item {
+        margin-right: 0;
+    }
+
+    .client-item[aria-hidden="true"] {
+        display: none;
+    }
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
     nav {
@@ -1072,11 +1353,99 @@ footer span {
     margin: 0 auto;
 }
 
-.skill-section {
+.skill-section,
+.about-section {
     padding: 6rem 4rem;
 }
 
 .skill-section .section-wrap {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+/* ── RESPONSIVE: tablet y móvil ── */
+@media (max-width: 768px) {
+
+    .skill-section,
+    .about-section {
+        padding: 4rem 1.5rem;
+    }
+
+    /* Nav: logo arriba, enlaces en una franja deslizable */
+    nav {
+        flex-wrap: wrap;
+        row-gap: 0.6rem;
+        padding: 0.9rem 1rem;
+    }
+
+    .nav-phone {
+        display: none;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;          /* 2 filas: todos los enlaces visibles sin deslizar */
+        gap: 0.35rem 1rem;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* "Inicio" sobra en móvil (el hero ya está arriba); libera espacio para que "Contacto" se vea */
+    .nav-links a[href="#inicio"] {
+        display: none;
+    }
+
+    .nav-links a {
+        flex-shrink: 0;
+        font-size: 0.8rem;
+        letter-spacing: 0.02em;
+    }
+
+    #inicio {
+        padding-top: 10rem;
+    }
+
+    html {
+        scroll-padding-top: 120px;
+    }
+
+    .hero-ctas,
+    .contact-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-card {
+        padding: 1.75rem;
+    }
+
+    /* Clientes: logos más chicos en celular */
+    .clients-marquee {
+        --logo-w: 150px;
+        --logo-h: 84px;
+        --gap: 1rem;
+        --speed: 24s;
+    }
+
+    .client-logo {
+        padding: 0.75rem 0.9rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .hero-title {
+        font-size: 2.6rem;
+    }
+
+    .hero-ctas a {
+        flex: 1 1 100%;
+        justify-content: center;
+    }
+
+    .about-stats {
+        gap: 0.75rem;
+    }
 }
