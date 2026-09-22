@@ -60,6 +60,21 @@ nav {
     border-bottom: 1px solid var(--border);
 }
 
+/* Marca: logo + nombre, enlaza al inicio */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.nav-mark {
+    width: auto;
+    height: 38px;
+    display: block;
+}
+
 .nav-logo {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
@@ -1201,8 +1216,8 @@ footer span {
     font-weight: 600;
 }
 
-/* Menú con 7 enlaces: desde 1200px el teléfono ya no cabe (sigue en Contacto y WhatsApp) */
-@media (max-width: 1200px) {
+/* Menú con logo + 7 enlaces: bajo 1320px el teléfono ya no cabe (sigue en Contacto y WhatsApp) */
+@media (max-width: 1320px) {
     nav {
         padding: 1.1rem 2rem;
     }
