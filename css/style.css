@@ -1285,6 +1285,69 @@ footer span {
     }
 }
 
+/* ── DESTACADO WHATSAPP ── */
+.wa-feature {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 2.5rem;
+    align-items: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 2.5rem;
+}
+
+.wa-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 0.8rem;
+}
+
+.wa-desc {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+.wa-feature .service-list {
+    margin-top: 1.5rem;
+}
+
+.wa-figure {
+    margin: 0;
+    text-align: center;
+}
+
+.wa-figure img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 18px 40px rgba(0, 0, 0, 0.45));
+}
+
+.wa-figure figcaption {
+    margin-top: 0.9rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+    .wa-feature {
+        grid-template-columns: 1fr;
+        padding: 1.75rem 1.25rem;
+        gap: 2rem;
+    }
+
+    .wa-figure img {
+        max-width: 240px;
+    }
+}
+
 /* ── CLIENTES (bucle infinito) ── */
 .clients-marquee {
     --logo-w: 200px;
