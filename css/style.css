@@ -1331,6 +1331,134 @@ footer span {
     }
 }
 
+/* ── PÁGINA DE GRACIAS ── */
+#gracias {
+    min-height: 82vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6rem 1.5rem 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+#gracias .section-desc {
+    max-width: 520px;
+}
+
+.gracias-mark {
+    width: auto;
+    height: 72px;
+    margin-bottom: 1.5rem;
+}
+
+/* ── FORMULARIO DE CONTACTO (Netlify Forms) ── */
+.contact-form-wrap {
+    margin-bottom: 1.75rem;
+    text-align: left;
+}
+
+.contact-form-wrap summary {
+    cursor: pointer;
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.contact-form-wrap summary::-webkit-details-marker {
+    display: none;
+}
+
+.contact-form-wrap summary::after {
+    content: ' ▾';
+    color: var(--accent);
+}
+
+.contact-form-wrap[open] summary::after {
+    content: ' ▴';
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-top: 1rem;
+}
+
+.contact-form label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    margin-top: 0.7rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--text);
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem 0.9rem;
+    transition: border-color 0.2s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #6c7f9e;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+.btn-form {
+    margin-top: 1.2rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.9rem 1.5rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-form:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(97, 128, 250, 0.4);
+}
+
+.form-note {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* trampa anti-spam: invisible para personas, visible para los robots */
+.hidden-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 /* ── DESTACADO WHATSAPP ── */
 .wa-feature {
     margin-top: 2rem;
