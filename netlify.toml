@@ -1,0 +1,71 @@
+# Configuración de Netlify — Kevin Torres
+# Cabeceras de seguridad y de caché. No requiere build: el sitio es HTML estático.
+
+# ─────────────────────────────────────────────
+# Seguridad: aplica a todas las páginas
+# ─────────────────────────────────────────────
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Obliga a usar HTTPS durante un año en este dominio y sus subdominios
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+
+    # Impide que tu web se cargue dentro de un iframe de otro sitio (clickjacking)
+    X-Frame-Options = "DENY"
+
+    # El navegador respeta el tipo de archivo declarado y no "adivina"
+    X-Content-Type-Options = "nosniff"
+
+    # Al salir de tu web solo se comparte el dominio, no la página exacta
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Desactiva permisos del navegador que tu web no usa
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), payment=(), usb=()"
+
+    # De dónde puede cargar recursos la página.
+    # 'unsafe-inline' es necesario porque el HTML usa onclick/onerror y estilos en línea;
+    # si algún día los mueves a archivos .js/.css, quítalo y la protección sube.
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests"
+
+# ─────────────────────────────────────────────
+# Caché
+# ─────────────────────────────────────────────
+# Las páginas se revalidan siempre: al publicar cambios se ven de inmediato.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# El CSS tampoco se cachea largo: su nombre no cambia al editarlo.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Imágenes: 7 días. Si reemplazas una sin cambiarle el nombre,
+# usa ?v=2 al final del src para forzar la recarga.
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/screenshots/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Íconos del navegador
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/favicon-32.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/apple-touch-icon.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
