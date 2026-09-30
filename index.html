@@ -37,7 +37,14 @@
       <img class="nav-mark" src="img/logo.svg" alt="" width="35" height="40">
       <div class="nav-logo">Kevin<span>Desarrollador Web</span></div>
     </a>
-    <div class="nav-links">
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+      aria-controls="navLinks">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <div class="nav-links" id="navLinks">
       <a href="#inicio">Inicio</a>
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#servicios">Servicios</a>
@@ -48,6 +55,8 @@
     </div>
     <div class="nav-phone"><span>📞</span>970 838 672</div>
   </nav>
+
+  <div class="nav-backdrop" id="navBackdrop"></div>
 
   <!-- HERO -->
   <section id="inicio">
@@ -782,6 +791,37 @@
 
   <script>
     document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    /* ── Menú móvil ── */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    const navBackdrop = document.getElementById('navBackdrop');
+
+    function setMenu(open) {
+      navToggle.setAttribute('aria-expanded', open);
+      navToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+      navLinks.classList.toggle('open', open);
+      navBackdrop.classList.toggle('open', open);
+      document.body.classList.toggle('menu-open', open);
+    }
+
+    navToggle.addEventListener('click', () => {
+      setMenu(navToggle.getAttribute('aria-expanded') !== 'true');
+    });
+
+    // Se cierra al elegir una sección, al tocar el fondo o con la tecla Escape
+    navLinks.addEventListener('click', e => {
+      if (e.target.tagName === 'A') setMenu(false);
+    });
+    navBackdrop.addEventListener('click', () => setMenu(false));
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') setMenu(false);
+    });
+
+    // Si se agranda la ventana, el menú vuelve a su estado normal
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 900) setMenu(false);
+    });
 
     // Intersection Observer for fade-in animations
     const observer = new IntersectionObserver((entries) => {

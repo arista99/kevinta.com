@@ -147,6 +147,73 @@ nav {
     margin-right: 4px;
 }
 
+/* ── MENÚ MÓVIL (botón de 3 líneas) ── */
+.nav-toggle {
+    display: none;              /* solo aparece por debajo de 900px */
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 130;
+    align-items: center;
+    transition: border-color 0.2s;
+}
+
+.nav-toggle:hover {
+    border-color: var(--accent);
+}
+
+.nav-toggle-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+/* Al abrir, las 3 líneas se vuelven una X */
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Fondo oscuro detrás del panel */
+.nav-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(5, 10, 20, 0.6);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    /* debajo del nav (z-index 100): el panel va dentro del nav y debe quedar encima */
+    z-index: 90;
+}
+
+.nav-backdrop.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Con el menú abierto, la página de atrás no se desplaza */
+body.menu-open {
+    overflow: hidden;
+}
+
 /* ── HERO ── */
 #inicio {
     min-height: 100vh;
@@ -1270,27 +1337,57 @@ footer span {
         white-space: nowrap;
     }
 
-    /* Tablet angosta: logo arriba y enlaces en una fila debajo, con aire entre ellos */
     nav {
-        padding: 0.9rem 1.5rem;
-        flex-wrap: wrap;
-        row-gap: 0.5rem;
+        padding: 0.9rem 1.25rem;
+        /* Sin backdrop-filter: un elemento con blur se vuelve el marco de referencia
+           de sus hijos position:fixed y encerraría el panel dentro del alto del nav. */
+        backdrop-filter: none;
+        background: var(--bg);
     }
 
+    /* Aparece el botón de 3 líneas */
+    .nav-toggle {
+        display: flex;
+    }
+
+    /* Los enlaces pasan a un panel lateral oculto */
     .nav-links {
-        order: 3;
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 0.4rem 1.3rem;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: min(80vw, 320px);
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        padding: 5.5rem 1.5rem 2rem;
+        background: var(--surface);
+        border-left: 1px solid var(--border);
+        box-shadow: -18px 0 50px rgba(0, 0, 0, 0.45);
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        overflow-y: auto;
+        z-index: 120;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
     }
 
     .nav-links a {
-        font-size: 0.85rem;
-        letter-spacing: 0.03em;
+        font-size: 1.05rem;
+        letter-spacing: 0.04em;
+        padding: 0.95rem 0.25rem;      /* área de toque cómoda */
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links a::after {
+        display: none;
     }
 
     html {
-        scroll-padding-top: 120px;
+        scroll-padding-top: 90px;
     }
 }
 
@@ -1646,9 +1743,6 @@ footer span {
         font-size: 3rem;
     }
 
-    .nav-links {
-        gap: 1.5rem;
-    }
 }
 
 /* ── SECTION WRAPPERS ── */
@@ -1675,30 +1769,11 @@ footer span {
         padding: 4rem 1.5rem;
     }
 
-    /* Nav: logo arriba, enlaces en una franja deslizable */
     nav {
-        flex-wrap: wrap;
-        row-gap: 0.6rem;
         padding: 0.9rem 1rem;
     }
 
     .nav-phone {
-        display: none;
-    }
-
-    .nav-links {
-        order: 3;
-        width: 100%;
-        flex-wrap: wrap;          /* 2 filas: todos los enlaces visibles sin deslizar */
-        gap: 0.35rem 1rem;
-    }
-
-    .nav-links::-webkit-scrollbar {
-        display: none;
-    }
-
-    /* "Inicio" sobra en móvil (el hero ya está arriba); libera espacio para que "Contacto" se vea */
-    .nav-links a[href="#inicio"] {
         display: none;
     }
 
