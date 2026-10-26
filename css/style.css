@@ -2291,3 +2291,17 @@ body.modal-open {
         bottom: 1.4rem;
     }
 }
+
+
+/* ── EXPERIENCIA: botón "Ver experiencia anterior" ── */
+.timeline-toggle {
+    margin-left: calc(41px + 2rem);   /* alineado con las tarjetas, no con la línea */
+}
+
+@media (max-width: 600px) {
+    .timeline-toggle {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}

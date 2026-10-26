@@ -378,6 +378,8 @@
         </div>
       </div>
 
+      <!-- Experiencia anterior: oculta hasta pulsar "Ver experiencia anterior" -->
+      <div class="timeline-more" id="timelineMore" hidden>
       <div class="timeline-item">
         <div class="timeline-dot">
           <div class="dot"></div>
@@ -461,8 +463,11 @@
           </ul>
         </div>
       </div>
+      </div>
 
     </div>
+    <button type="button" class="btn-secondary timeline-toggle" id="timelineToggle" aria-expanded="false"
+      aria-controls="timelineMore">Ver experiencia anterior (5)</button>
   </section>
 
   <div class="divider"></div>
@@ -924,6 +929,20 @@
     }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    /* ── Experiencia anterior: mostrar / ocultar ── */
+    const tlToggle = document.getElementById('timelineToggle');
+    const tlMore = document.getElementById('timelineMore');
+    const tlCount = tlMore.querySelectorAll('.timeline-item').length;
+    tlToggle.textContent = `Ver experiencia anterior (${tlCount})`;
+    tlToggle.addEventListener('click', () => {
+      const open = tlMore.hidden;
+      tlMore.hidden = !open;
+      tlToggle.setAttribute('aria-expanded', open);
+      tlToggle.textContent = open ? 'Ocultar experiencia anterior' : `Ver experiencia anterior (${tlCount})`;
+      // Al ocultar, vuelve al inicio de la sección para no dejar al usuario más abajo
+      if (!open) document.getElementById('experiencia').scrollIntoView({ behavior: 'smooth' });
+    });
 
     // Stagger timeline items
     document.querySelectorAll('.timeline-item').forEach((item, i) => {
