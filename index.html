@@ -1,642 +1,1268 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google Tag Manager -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-K6VSPMPJ"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Páginas web para negocios en Lima | Kevin Torres</title>
+    <meta
+      name="description"
+      content="Páginas web que se ven bien en el celular, perfil de Google y botón de WhatsApp para veterinarias, clínicas, spas y tiendas de Lima. También mantengo sistemas web."
+    />
+    <link rel="canonical" href="https://portafolio-kevint.netlify.app/" />
 
-<head>
-  <meta charset="UTF-8">
-  <!-- Google Tag Manager -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-K6VSPMPJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  </script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Páginas web para negocios en Lima | Kevin Torres</title>
-  <meta name="description" content="Páginas web que se ven bien en el celular, perfil de Google y botón de WhatsApp para veterinarias, clínicas, spas y tiendas de Lima. También mantengo sistemas web.">
-  <link rel="canonical" href="https://portafolio-kevint.netlify.app/">
+    <!-- Vista previa al compartir el enlace (WhatsApp, LinkedIn, Facebook) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:site_name" content="Kevin Torres" />
+    <meta
+      property="og:title"
+      content="Kevin Torres — Páginas web para negocios en Lima"
+    />
+    <meta
+      property="og:description"
+      content="Páginas web que se ven bien en el celular, perfil de Google y botón de WhatsApp para veterinarias, clínicas, spas y tiendas de Lima. También mantengo sistemas web."
+    />
+    <meta property="og:url" content="https://portafolio-kevint.netlify.app/" />
+    <meta
+      property="og:image"
+      content="https://portafolio-kevint.netlify.app/img/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0b1628" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  </head>
 
-  <!-- Vista previa al compartir el enlace (WhatsApp, LinkedIn, Facebook) -->
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="es_PE">
-  <meta property="og:site_name" content="Kevin Torres">
-  <meta property="og:title" content="Kevin Torres — Páginas web para negocios en Lima">
-  <meta property="og:description" content="Páginas web que se ven bien en el celular, perfil de Google y botón de WhatsApp para veterinarias, clínicas, spas y tiendas de Lima. También mantengo sistemas web.">
-  <meta property="og:url" content="https://portafolio-kevint.netlify.app/">
-  <meta property="og:image" content="https://portafolio-kevint.netlify.app/img/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#0b1628">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-</head>
+  <body>
+    <!-- NAV -->
+    <nav>
+      <a
+        class="nav-brand"
+        href="#inicio"
+        aria-label="Kevin Torres, ir al inicio"
+      >
+        <img
+          class="nav-mark"
+          src="img/logo.svg"
+          alt=""
+          width="35"
+          height="40"
+        />
+        <div class="nav-logo">Kevin<span>Desarrollador Web</span></div>
+      </a>
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
 
-<body>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#planes">Planes</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#clientes">Clientes</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="nav-phone"><span>📞</span>970 838 672</div>
+    </nav>
 
-  <!-- NAV -->
-  <nav>
-    <a class="nav-brand" href="#inicio" aria-label="Kevin Torres, ir al inicio">
-      <img class="nav-mark" src="img/logo.svg" alt="" width="35" height="40">
-      <div class="nav-logo">Kevin<span>Desarrollador Web</span></div>
-    </a>
-    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false"
-      aria-controls="navLinks">
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-      <span class="nav-toggle-bar"></span>
-    </button>
+    <div class="nav-backdrop" id="navBackdrop"></div>
 
-    <div class="nav-links" id="navLinks">
-      <a href="#inicio">Inicio</a>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#planes">Planes</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#portafolio">Portafolio</a>
-      <a href="#clientes">Clientes</a>
-      <a href="#contacto">Contacto</a>
-    </div>
-    <div class="nav-phone"><span>📞</span>970 838 672</div>
-  </nav>
+    <main>
+      <!-- HERO -->
+      <section id="inicio">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
 
-  <div class="nav-backdrop" id="navBackdrop"></div>
+        <div class="hero-badge">Disponible para proyectos</div>
 
-  <main>
-  <!-- HERO -->
-  <section id="inicio">
-    <div class="hero-orb hero-orb-1"></div>
-    <div class="hero-orb hero-orb-2"></div>
-    <div class="hero-orb hero-orb-3"></div>
+        <h1 class="hero-title">
+          Kevin<br /><span class="accent-word">Torres</span>
+        </h1>
 
-    <div class="hero-badge">Disponible para proyectos</div>
-
-    <h1 class="hero-title">
-      Kevin<br><span class="accent-word">Torres</span>
-    </h1>
-
-    <p class="hero-sub">
-      Desarrollo, mejoro y mantengo los sistemas web que tu empresa usa todos los días.
-    </p>
-
-    <div class="hero-ctas">
-      <a href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20vi%20tu%20web%20y%20necesito%20ayuda%20con%20mi%20sistema."
-        class="btn-primary" target="_blank" rel="noopener">Escríbeme por WhatsApp</a>
-      <a href="#portafolio" class="btn-secondary">Ver proyectos</a>
-    </div>
-
-    <div class="hero-scroll">
-      <div class="scroll-line"></div>
-      Scroll
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- SOBRE MI -->
-  <div class="about-section">
-    <div class="fade-in" id="sobre-mi">
-      <div>
-        <div class="section-label">Sobre mí</div>
-        <h2 class="section-title">Hola, soy <span
-            style="background:linear-gradient(135deg,#4f6ef7,#7c5cfc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Kevin
-            Torres</span></h2>
-        <p class="section-desc" style="margin-bottom:1.5rem;">
-          Soy desarrollador de software con más de 5 años trabajando para empresas de salud, comercio
-          y servicios. Construyo sistemas web a medida con Laravel y Livewire que resuelven procesos
-          reales del negocio: gestión de información, reportes, integraciones entre sistemas y
-          aplicaciones internas que los equipos usan todos los días.
+        <p class="hero-sub">
+          Desarrollo, mejoro y mantengo los sistemas web que tu empresa usa
+          todos los días.
         </p>
+
+        <div class="hero-ctas">
+          <a
+            href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20vi%20tu%20web%20y%20necesito%20ayuda%20con%20mi%20sistema."
+            class="btn-primary"
+            target="_blank"
+            rel="noopener"
+            >Escríbeme por WhatsApp</a
+          >
+          <a href="#portafolio" class="btn-secondary">Ver proyectos</a>
+        </div>
+
+        <div class="hero-scroll">
+          <div class="scroll-line"></div>
+          Scroll
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- SOBRE MI -->
+      <div class="about-section">
+        <div class="fade-in" id="sobre-mi">
+          <div>
+            <div class="section-label">Sobre mí</div>
+            <h2 class="section-title">
+              Hola, soy
+              <span
+                style="
+                  background: linear-gradient(135deg, #4f6ef7, #7c5cfc);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                "
+                >Kevin Torres</span
+              >
+            </h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem">
+              Soy desarrollador de software con más de 5 años trabajando para
+              empresas de salud, comercio y servicios. Construyo sistemas web a
+              medida con Laravel y Livewire que resuelven procesos reales del
+              negocio: gestión de información, reportes, integraciones entre
+              sistemas y aplicaciones internas que los equipos usan todos los
+              días.
+            </p>
+            <p class="section-desc">
+              Me encargo del proyecto completo: entiendo cómo trabaja tu
+              empresa, diseño la base de datos, desarrollo la aplicación y la
+              dejo funcionando en servidores Ubuntu. Hoy profundizo en DevOps
+              para automatizar despliegues y que cada sistema sea más estable y
+              fácil de mantener.
+            </p>
+          </div>
+          <div>
+            <div class="about-card">
+              <img
+                class="about-avatar"
+                src="img/kevin-torres.jpg"
+                width="120"
+                height="120"
+                alt="Kevin Torres Arista, desarrollador web y analista de software en Lima, Perú"
+              />
+              <div class="about-name">Kevin Torres Arista</div>
+              <div class="about-role">
+                Desarrollador de sistemas web · Laravel
+              </div>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--text-muted);
+                  line-height: 1.7;
+                "
+              >
+                Basado en Perú · Disponible para colaboraciones remotas y
+                presenciales.
+              </p>
+              <div class="about-stats">
+                <div class="stat">
+                  <div class="stat-number">5+</div>
+                  <div class="stat-label">Años de experiencia</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Mejoras a sistemas en 2026</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">3+</div>
+                  <div class="stat-label">Proyectos completos</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">5</div>
+                  <div class="stat-label">Empresas cliente</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- SERVICIOS -->
+      <section
+        id="servicios"
+        class="fade-in"
+        style="max-width: 1200px; margin: 0 auto"
+      >
+        <div class="section-label">Servicios</div>
+        <h2 class="section-title">¿En qué puedo ayudarte?</h2>
         <p class="section-desc">
-          Me encargo del proyecto completo: entiendo cómo trabaja tu empresa, diseño la base de datos,
-          desarrollo la aplicación y la dejo funcionando en servidores Ubuntu. Hoy profundizo en DevOps
-          para automatizar despliegues y que cada sistema sea más estable y fácil de mantener.
+          No solo construyo sistemas nuevos: también me hago cargo de los que tu
+          empresa ya usa.
         </p>
-      </div>
-      <div>
-        <div class="about-card">
-          <img class="about-avatar" src="img/kevin-torres.jpg" width="120" height="120"
-            alt="Kevin Torres Arista, desarrollador web y analista de software en Lima, Perú">
-          <div class="about-name">Kevin Torres Arista</div>
-          <div class="about-role">Desarrollador de sistemas web · Laravel</div>
-          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.7;">
-            Basado en Perú · Disponible para colaboraciones remotas y presenciales.
-          </p>
-          <div class="about-stats">
-            <div class="stat">
-              <div class="stat-number">5+</div>
-              <div class="stat-label">Años de experiencia</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">15+</div>
-              <div class="stat-label">Mejoras a sistemas en 2026</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">3+</div>
-              <div class="stat-label">Proyectos completos</div>
-            </div>
-            <div class="stat">
-              <div class="stat-number">5</div>
-              <div class="stat-label">Empresas cliente</div>
-            </div>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🧩</div>
+            <h3 class="service-name">Desarrollo a medida</h3>
+            <p class="service-desc">
+              Sistemas web, ERP, CRM, plataformas SaaS y aplicaciones internas
+              construidas según cómo trabaja tu empresa.
+            </p>
+            <ul class="service-list">
+              <li>Aplicaciones web</li>
+              <li>ERP y CRM</li>
+              <li>SaaS</li>
+              <li>Integración con WhatsApp Business</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🔧</div>
+            <h3 class="service-name">Mejora de sistemas existentes</h3>
+            <p class="service-desc">
+              Tomo el sistema que ya tienes, aunque lo haya hecho otra persona:
+              corrijo errores, agrego módulos y lo actualizo a versiones
+              actuales.
+            </p>
+            <ul class="service-list">
+              <li>Sistemas heredados</li>
+              <li>Nuevos módulos</li>
+              <li>Migración de versión</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🛠️</div>
+            <h3 class="service-name">Soporte y mantenimiento</h3>
+            <p class="service-desc">
+              Atención de incidencias, actualizaciones de seguridad y ajustes
+              continuos para que tu sistema no se quede obsoleto.
+            </p>
+            <ul class="service-list">
+              <li>Corrección de errores</li>
+              <li>Actualizaciones, también WordPress y Joomla</li>
+              <li>Soporte continuo</li>
+            </ul>
+          </article>
+          <article class="service-card">
+            <div class="service-icon">🚀</div>
+            <h3 class="service-name">Implementación</h3>
+            <p class="service-desc">
+              Configuro el servidor, la base de datos y el despliegue para dejar
+              el sistema funcionando y listo para tu equipo.
+            </p>
+            <ul class="service-list">
+              <li>Servidores Ubuntu</li>
+              <li>Base de datos</li>
+              <li>Puesta en producción</li>
+              <li>Asesoría en redes y servidores</li>
+            </ul>
+          </article>
+        </div>
+
+        <!-- Destacado: automatización con WhatsApp Business -->
+        <div class="wa-feature">
+          <div class="wa-text">
+            <h3 class="wa-title">Automatización con WhatsApp Business</h3>
+            <p class="wa-desc">
+              Configuro plantillas de mensajes aprobadas por WhatsApp y las
+              conecto con tu sistema mediante Twilio y Meta Business Manager,
+              para que tus clientes reciban avisos automáticos y respondan con
+              un solo toque.
+            </p>
+            <ul class="service-list">
+              <li>Recordatorios y confirmación de citas</li>
+              <li>Avisos de pedidos, pagos o entregas</li>
+              <li>Respuestas con botones, sin escribir</li>
+            </ul>
           </div>
+          <figure class="wa-figure">
+            <img
+              src="img/whatsapp-plantilla.svg"
+              width="360"
+              height="700"
+              loading="lazy"
+              alt="Ejemplo de plantilla de WhatsApp Business: recordatorio de cita con botones Confirmar y Reprogramar, y respuesta automática al confirmar"
+            />
+            <figcaption>Ejemplo ilustrativo</figcaption>
+          </figure>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
 
-  <div class="divider"></div>
+      <div class="divider"></div>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="fade-in" style="max-width:1200px;margin:0 auto;">
-    <div class="section-label">Servicios</div>
-    <h2 class="section-title">¿En qué puedo ayudarte?</h2>
-    <p class="section-desc">No solo construyo sistemas nuevos: también me hago cargo de los que tu empresa ya usa.</p>
-    <div class="services-grid">
-      <article class="service-card">
-        <div class="service-icon">🧩</div>
-        <h3 class="service-name">Desarrollo a medida</h3>
-        <p class="service-desc">Sistemas web, ERP, CRM, plataformas SaaS y aplicaciones internas construidas
-          según cómo trabaja tu empresa.</p>
-        <ul class="service-list">
-          <li>Aplicaciones web</li>
-          <li>ERP y CRM</li>
-          <li>SaaS</li>
-          <li>Integración con WhatsApp Business</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <div class="service-icon">🔧</div>
-        <h3 class="service-name">Mejora de sistemas existentes</h3>
-        <p class="service-desc">Tomo el sistema que ya tienes, aunque lo haya hecho otra persona: corrijo errores,
-          agrego módulos y lo actualizo a versiones actuales.</p>
-        <ul class="service-list">
-          <li>Sistemas heredados</li>
-          <li>Nuevos módulos</li>
-          <li>Migración de versión</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <div class="service-icon">🛠️</div>
-        <h3 class="service-name">Soporte y mantenimiento</h3>
-        <p class="service-desc">Atención de incidencias, actualizaciones de seguridad y ajustes continuos para que
-          tu sistema no se quede obsoleto.</p>
-        <ul class="service-list">
-          <li>Corrección de errores</li>
-          <li>Actualizaciones, también WordPress y Joomla</li>
-          <li>Soporte continuo</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <div class="service-icon">🚀</div>
-        <h3 class="service-name">Implementación</h3>
-        <p class="service-desc">Configuro el servidor, la base de datos y el despliegue para dejar el sistema
-          funcionando y listo para tu equipo.</p>
-        <ul class="service-list">
-          <li>Servidores Ubuntu</li>
-          <li>Base de datos</li>
-          <li>Puesta en producción</li>
-          <li>Asesoría en redes y servidores</li>
-        </ul>
-      </article>
-    </div>
-
-    <!-- Destacado: automatización con WhatsApp Business -->
-    <div class="wa-feature">
-      <div class="wa-text">
-        <h3 class="wa-title">Automatización con WhatsApp Business</h3>
-        <p class="wa-desc">Configuro plantillas de mensajes aprobadas por WhatsApp y las conecto con tu sistema
-          mediante Twilio y Meta Business Manager, para que tus clientes reciban avisos automáticos y respondan con un
-          solo toque.</p>
-        <ul class="service-list">
-          <li>Recordatorios y confirmación de citas</li>
-          <li>Avisos de pedidos, pagos o entregas</li>
-          <li>Respuestas con botones, sin escribir</li>
-        </ul>
-      </div>
-      <figure class="wa-figure">
-        <img src="img/whatsapp-plantilla.svg" width="360" height="700" loading="lazy"
-          alt="Ejemplo de plantilla de WhatsApp Business: recordatorio de cita con botones Confirmar y Reprogramar, y respuesta automática al confirmar">
-        <figcaption>Ejemplo ilustrativo</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- PLANES (paquetes de precio fijo para negocios locales) -->
-  <section id="planes" class="fade-in" style="max-width:1200px;margin:0 auto;">
-    <div class="section-label">Planes</div>
-    <h2 class="section-title">Planes para tu negocio</h2>
-    <p class="section-desc">Para veterinarias, clínicas, spas y tiendas que quieren que los encuentren en Google y
-      les escriban por WhatsApp.</p>
-    <div class="plans-grid">
-      <article class="service-card plan-card">
-        <div class="plan-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><path d="M9.5 9 7.5 11l2 2M14.5 9l2 2-2 2"/></svg>
-        </div>
-        <div class="plan-price">Pago único</div>
-        <h3 class="service-name">Presencia digital</h3>
-        <p class="service-desc">Tu negocio con página propia y perfil de Google listo para recibir clientes.</p>
-        <ul class="service-list">
-          <li>Landing page que se ve bien en celular</li>
-          <li>Perfil de Google Business creado y optimizado</li>
-          <li>Botón de WhatsApp y formulario de contacto</li>
-          <li>Dominio y hosting del primer año incluidos</li>
-        </ul>
-        <a class="btn-whatsapp plan-cta"
-          href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20me%20interesa%20el%20plan%20Presencia%20digital"
-          target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" /></svg> Cotiza por WhatsApp</a>
-      </article>
-      <article class="service-card plan-card">
-        <div class="plan-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.5 17.3a1.8 1.8 0 0 0 2.5 2.5l5.8-5.8a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.3-.4-.4-2.3z"/></svg>
-        </div>
-        <div class="plan-price">Mensual</div>
-        <h3 class="service-name">Mantenimiento</h3>
-        <p class="service-desc">Me encargo de que tu página siga en línea y al día, sin que tengas que pensar en ella.
+      <!-- PLANES (paquetes de precio fijo para negocios locales) -->
+      <section
+        id="planes"
+        class="fade-in"
+        style="max-width: 1200px; margin: 0 auto"
+      >
+        <div class="section-label">Planes</div>
+        <h2 class="section-title">Planes para tu negocio</h2>
+        <p class="section-desc">
+          Para veterinarias, clínicas, spas y tiendas que quieren que los
+          encuentren en Google y les escriban por WhatsApp.
         </p>
-        <ul class="service-list">
-          <li>Hosting y respaldos</li>
-          <li>Cambios menores de contenido</li>
-          <li>Publicaciones en tu perfil de Google Business</li>
-        </ul>
-        <a class="btn-whatsapp plan-cta"
-          href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20me%20interesa%20el%20plan%20Mantenimiento"
-          target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" /></svg> Cotiza por WhatsApp</a>
-      </article>
-      <article class="service-card plan-card plan-card--soon">
-        <div class="plan-icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><ellipse cx="6" cy="10" rx="2" ry="2.6"/><ellipse cx="10" cy="6" rx="2" ry="2.6"/><ellipse cx="14" cy="6" rx="2" ry="2.6"/><ellipse cx="18" cy="10" rx="2" ry="2.6"/><path d="M12 11c-2.6 0-5.5 3.6-5.5 6.2 0 1.6 1.2 2.3 2.6 2.3 1.2 0 1.8-.6 2.9-.6s1.7.6 2.9.6c1.4 0 2.6-.7 2.6-2.3C17.5 14.6 14.6 11 12 11z"/></svg>
+        <div class="plans-grid">
+          <article class="service-card plan-card">
+            <div class="plan-icon" aria-hidden="true">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="4" width="20" height="13" rx="2" />
+                <path d="M8 21h8M12 17v4" />
+                <path d="M9.5 9 7.5 11l2 2M14.5 9l2 2-2 2" />
+              </svg>
+            </div>
+            <div class="plan-price">Pago único</div>
+            <h3 class="service-name">Presencia digital</h3>
+            <p class="service-desc">
+              Tu negocio con página propia y perfil de Google listo para recibir
+              clientes.
+            </p>
+            <ul class="service-list">
+              <li>Landing page que se ve bien en celular</li>
+              <li>Perfil de Google Business creado y optimizado</li>
+              <li>Botón de WhatsApp y formulario de contacto</li>
+              <li>Dominio y hosting del primer año incluidos</li>
+            </ul>
+            <a
+              class="btn-whatsapp plan-cta"
+              href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20me%20interesa%20el%20plan%20Presencia%20digital"
+              target="_blank"
+              rel="noopener"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+              Cotiza por WhatsApp</a
+            >
+          </article>
+          <article class="service-card plan-card">
+            <div class="plan-icon" aria-hidden="true">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3.5 17.3a1.8 1.8 0 0 0 2.5 2.5l5.8-5.8a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.3-.4-.4-2.3z"
+                />
+              </svg>
+            </div>
+            <div class="plan-price">Mensual</div>
+            <h3 class="service-name">Mantenimiento</h3>
+            <p class="service-desc">
+              Me encargo de que tu página siga en línea y al día, sin que tengas
+              que pensar en ella.
+            </p>
+            <ul class="service-list">
+              <li>Hosting y respaldos</li>
+              <li>Cambios menores de contenido</li>
+              <li>Publicaciones en tu perfil de Google Business</li>
+            </ul>
+            <a
+              class="btn-whatsapp plan-cta"
+              href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20me%20interesa%20el%20plan%20Mantenimiento"
+              target="_blank"
+              rel="noopener"
+              ><svg
+                width="18"
+                height="18"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+              Cotiza por WhatsApp</a
+            >
+          </article>
+          <article class="service-card plan-card plan-card--soon">
+            <div class="plan-icon" aria-hidden="true">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <ellipse cx="6" cy="10" rx="2" ry="2.6" />
+                <ellipse cx="10" cy="6" rx="2" ry="2.6" />
+                <ellipse cx="14" cy="6" rx="2" ry="2.6" />
+                <ellipse cx="18" cy="10" rx="2" ry="2.6" />
+                <path
+                  d="M12 11c-2.6 0-5.5 3.6-5.5 6.2 0 1.6 1.2 2.3 2.6 2.3 1.2 0 1.8-.6 2.9-.6s1.7.6 2.9.6c1.4 0 2.6-.7 2.6-2.3C17.5 14.6 14.6 11 12 11z"
+                />
+              </svg>
+            </div>
+            <div class="plan-price">
+              <span class="plan-tag">Próximamente</span>
+            </div>
+            <h3 class="service-name">Sistema para veterinarias</h3>
+            <p class="service-desc">
+              Agenda de citas e historias clínicas para tu veterinaria. En
+              desarrollo.
+            </p>
+            <a
+              class="btn-secondary plan-cta"
+              href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20av%C3%ADsame%20cuando%20est%C3%A9%20listo%20el%20sistema%20para%20veterinarias"
+              target="_blank"
+              rel="noopener"
+              >Avísame cuando esté listo</a
+            >
+          </article>
         </div>
-        <div class="plan-price"><span class="plan-tag">Próximamente</span></div>
-        <h3 class="service-name">Sistema para veterinarias</h3>
-        <p class="service-desc">Agenda de citas e historias clínicas para tu veterinaria. En desarrollo.</p>
-        <a class="btn-secondary plan-cta"
-          href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20av%C3%ADsame%20cuando%20est%C3%A9%20listo%20el%20sistema%20para%20veterinarias"
-          target="_blank" rel="noopener">Avísame cuando esté listo</a>
-      </article>
-    </div>
-  </section>
+      </section>
 
-  <div class="divider"></div>
+      <div class="divider"></div>
 
-  <!-- HABILIDADES -->
-  <div class="skill-section fade-in">
-    <div class="section-wrap">
-      <div class="section-label">Competencias</div>
-      <h2 class="section-title">Habilidades Principales</h2>
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
-          <div class="skill-name">Desarrollo Web</div>
-          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.6;">Sistemas web con Laravel y Livewire:
-            aplicaciones internas, APIs y reportes conectados a bases de datos.</p>
-          <div class="skill-tags">
-            <span class="tag tag-main">Laravel</span>
-            <span class="tag tag-main">Livewire</span>
-            <span class="tag">PHP</span>
-            <span class="tag">MySQL</span>
-            <span class="tag">Oracle</span>
-            <span class="tag">APIs REST</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">SCSS</span>
-            <span class="tag">MVC</span>
-          </div>
-          <div class="skill-learning">
-            <span class="skill-learning-label">Profundizando en</span>
-            <div class="skill-tags">
-              <span class="tag tag-learning">Angular</span>
-              <span class="tag tag-learning">TypeScript</span>
+      <!-- HABILIDADES -->
+      <div class="skill-section fade-in">
+        <div class="section-wrap">
+          <div class="section-label">Competencias</div>
+          <h2 class="section-title">Habilidades Principales</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">💻</div>
+              <div class="skill-name">Desarrollo Web</div>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--text-muted);
+                  line-height: 1.6;
+                "
+              >
+                Sistemas web con Laravel y Livewire: aplicaciones internas, APIs
+                y reportes conectados a bases de datos.
+              </p>
+              <div class="skill-tags">
+                <span class="tag tag-main">Laravel</span>
+                <span class="tag tag-main">Livewire</span>
+                <span class="tag">PHP</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Oracle</span>
+                <span class="tag">APIs REST</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">SCSS</span>
+                <span class="tag">MVC</span>
+              </div>
+              <div class="skill-learning">
+                <span class="skill-learning-label">Profundizando en</span>
+                <div class="skill-tags">
+                  <span class="tag tag-learning">Angular</span>
+                  <span class="tag tag-learning">TypeScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🔗</div>
+              <div class="skill-name">Integraciones y automatización</div>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--text-muted);
+                  line-height: 1.6;
+                "
+              >
+                Conecto tu sistema con otros servicios para que los avisos y los
+                datos viajen solos, sin trabajo manual.
+              </p>
+              <div class="skill-tags">
+                <span class="tag tag-main">WhatsApp Business API</span>
+                <span class="tag">Twilio</span>
+                <span class="tag">APIs REST</span>
+                <span class="tag">Integración entre sistemas</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🧠</div>
+              <div class="skill-name">Habilidades Blandas</div>
+              <p
+                style="
+                  font-size: 0.95rem;
+                  color: var(--text-muted);
+                  line-height: 1.6;
+                "
+              >
+                Enfoque analítico para resolver problemas complejos con
+                soluciones creativas.
+              </p>
+              <div class="skill-tags">
+                <span class="tag">Análisis crítico</span>
+                <span class="tag">Innovación</span>
+                <span class="tag">Creatividad</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="skill-card">
-          <div class="skill-icon">🔗</div>
-          <div class="skill-name">Integraciones y automatización</div>
-          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.6;">Conecto tu sistema con otros servicios
-            para que los avisos y los datos viajen solos, sin trabajo manual.</p>
-          <div class="skill-tags">
-            <span class="tag tag-main">WhatsApp Business API</span>
-            <span class="tag">Twilio</span>
-            <span class="tag">APIs REST</span>
-            <span class="tag">Integración entre sistemas</span>
-          </div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon">🧠</div>
-          <div class="skill-name">Habilidades Blandas</div>
-          <p style="font-size:0.95rem;color:var(--text-muted);line-height:1.6;">Enfoque analítico para resolver
-            problemas complejos con soluciones creativas.</p>
-          <div class="skill-tags">
-            <span class="tag">Análisis crítico</span>
-            <span class="tag">Innovación</span>
-            <span class="tag">Creatividad</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-
-  <!-- EXPERIENCIA / TIMELINE -->
-  <section id="experiencia" class="fade-in">
-    <div class="section-label">Trayectoria</div>
-    <h2 class="section-title">Experiencia Laboral</h2>
-    <p class="section-desc">Un recorrido profesional marcado por el crecimiento y la diversidad de roles en tecnología.
-    </p>
-
-    <div class="timeline">
-
-      <div class="timeline-item">
-        <div class="timeline-dot">
-          <div class="dot current"></div>
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-duration">Actualidad</div>
-          <div class="timeline-period">2026 </div>
-          <div class="timeline-role">Analista de Software</div>
-          <div class="timeline-company">Clínica San Gabriel</div>
-          <ul class="timeline-desc">
-            <li>💻 Analista Programador especializado en Laravel y tecnologías web modernas
-
-              Actualmente me desempeño como Analista Programador en el sector clínico, desarrollando y manteniendo
-              sistemas críticos que optimizan procesos administrativos y operativos en el área de salud.</li>
-            <li>🛠️ Stack tecnológico:
-
-              Backend: Laravel, PHP, JWT, APIs REST
-              Frontend: Livewire, Bootstrap, JavaScript
-              Infraestructura: Administración de servidores Ubuntu
-            </li>
-            <li>✨ Lo que aporto:
-
-              Desarrollo de aplicaciones robustas y escalables con Laravel
-              Implementación de autenticación segura con JWT
-              Creación de interfaces dinámicas con Livewire y JavaScript
-              Gestión y despliegue en entornos Linux (Ubuntu Server)</li>
-          </ul>
-        </div>
       </div>
 
-      <!-- Experiencia anterior: oculta hasta pulsar "Ver experiencia anterior" -->
-      <div class="timeline-more" id="timelineMore" hidden>
-      <div class="timeline-item">
-        <div class="timeline-dot">
-          <div class="dot"></div>
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-duration">8 meses</div>
-          <div class="timeline-period">2025</div>
-          <div class="timeline-role">Auxiliar de sistemas</div>
-          <div class="timeline-company">Transber</div>
-          <ul class="timeline-desc">
-            <li>Soporte a aplicación web de atenciones TI en PHP y MySQL</li>
-            <li>Desarrollo de aplicaciones web para gestión de activos y mantenimiento</li>
-            <li>Soporte técnico en hardware y software a áreas administrativas</li>
-          </ul>
-        </div>
-      </div>
+      <div class="divider"></div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot">
-          <div class="dot"></div>
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-duration">1 año 11 meses</div>
-          <div class="timeline-period">2023 — 2025</div>
-          <div class="timeline-role">Asistente de Sistemas</div>
-          <div class="timeline-company">Clínica Jesús del Norte</div>
-          <ul class="timeline-desc">
-            <li>Representar al Equipo de TI ante diferentes áreas</li>
-            <li>Responsable de pedidos de TIC (SAP GUI)</li>
-            <li>Gestionar documentación de TI</li>
-            <li>Soporte de aplicaciones web (PHP, MySql)</li>
-            <li>Soporte de aplicaciones de escritorio (Power Builder, Oracle)</li>
-          </ul>
-        </div>
-      </div>
+      <!-- EXPERIENCIA / TIMELINE -->
+      <section id="experiencia" class="fade-in">
+        <div class="section-label">Trayectoria</div>
+        <h2 class="section-title">Experiencia Laboral</h2>
+        <p class="section-desc">
+          Un recorrido profesional marcado por el crecimiento y la diversidad de
+          roles en tecnología.
+        </p>
 
-      <div class="timeline-item">
-        <div class="timeline-dot">
-          <div class="dot"></div>
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-duration">1 año 2 meses</div>
-          <div class="timeline-period">2022 — 2023</div>
-          <div class="timeline-role">Soporte Técnico</div>
-          <div class="timeline-company">Clínica Jesús del Norte</div>
-          <ul class="timeline-desc">
-            <li>Soporte de mantenimiento y configuración (PC, Impresoras, Laptop)</li>
-            <li>Soporte de accesos (Active Directory)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot">
-          <div class="dot"></div>
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-duration">6 meses</div>
-          <div class="timeline-period">2019 — 2020</div>
-          <div class="timeline-role">Analista Comercial</div>
-          <div class="timeline-company">Punto de Distribución</div>
-          <ul class="timeline-desc">
-            <li>Presentar informes con cuadro de análisis de ventas (Excel)</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="timeline-item">
-        <div class="timeline-dot">
-          <div class="dot"></div>
-        </div>
-        <div class="timeline-content">
-          <div class="timeline-duration">6 meses</div>
-          <div class="timeline-period">2019</div>
-          <div class="timeline-role">Asistente de Sistemas</div>
-          <div class="timeline-company">Punto de Distribución</div>
-          <ul class="timeline-desc">
-            <li>Soporte de accesos (Active Directory)</li>
-            <li>Soporte de aplicación de escritorio (Sql Server)</li>
-            <li>Soporte de mantenimiento y configuración (PC)</li>
-          </ul>
-        </div>
-      </div>
-      </div>
-
-    </div>
-    <button type="button" class="btn-secondary timeline-toggle" id="timelineToggle" aria-expanded="false"
-      aria-controls="timelineMore">Ver experiencia anterior (5)</button>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- PORTAFOLIO -->
-  <section id="portafolio" class="fade-in" style="max-width:1200px;margin:0 auto;">
-    <div class="section-label">Trabajo</div>
-    <h2 class="section-title">Proyectos Destacados</h2>
-    <p class="section-desc">Proyectos reales desarrollados con tecnologías modernas para clientes reales.</p>
-
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-number">Proyecto 01</div>
-          <div class="project-name">Amautas Mineros — Web institucional</div>
-          <p class="project-desc">
-            Realización web institucional. Estructura completa según la solicitud del cliente,
-            con integración de comunicación por email.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">SCSS</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">PHPMailer</span>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <div class="dot current"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-duration">Actualidad</div>
+              <div class="timeline-period">2026</div>
+              <div class="timeline-role">Analista de Software</div>
+              <div class="timeline-company">Clínica San Gabriel</div>
+              <ul class="timeline-desc">
+                <li>
+                  💻 Analista Programador especializado en Laravel y tecnologías
+                  web modernas Actualmente me desempeño como Analista
+                  Programador en el sector clínico, desarrollando y manteniendo
+                  sistemas críticos que optimizan procesos administrativos y
+                  operativos en el área de salud.
+                </li>
+                <li>
+                  🛠️ Stack tecnológico: Backend: Laravel, PHP, JWT, APIs REST
+                  Frontend: Livewire, Bootstrap, JavaScript Infraestructura:
+                  Administración de servidores Ubuntu
+                </li>
+                <li>
+                  ✨ Lo que aporto: Desarrollo de aplicaciones robustas y
+                  escalables con Laravel Implementación de autenticación segura
+                  con JWT Creación de interfaces dinámicas con Livewire y
+                  JavaScript Gestión y despliegue en entornos Linux (Ubuntu
+                  Server)
+                </li>
+              </ul>
+            </div>
           </div>
-          <button type="button" class="project-link project-more">Ver detalle →</button>
-        </div>
-        <div class="project-visual">
-          <div class="carousel" id="carousel-1">
-            <img class="slide" src="screenshots/amauta/home-amautas.webp" alt="Página de inicio del sitio de Amautas Mineros" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Inicio</span></div>
 
-            <img class="slide" src="screenshots/amauta/conocenos-amautas.webp" alt="Sección Conócenos del sitio de Amautas Mineros" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Conócenos</span></div>
+          <!-- Experiencia anterior: oculta hasta pulsar "Ver experiencia anterior" -->
+          <div class="timeline-more" id="timelineMore" hidden>
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <div class="dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-duration">8 meses</div>
+                <div class="timeline-period">2025</div>
+                <div class="timeline-role">Auxiliar de sistemas</div>
+                <div class="timeline-company">Transber</div>
+                <ul class="timeline-desc">
+                  <li>
+                    Soporte a aplicación web de atenciones TI en PHP y MySQL
+                  </li>
+                  <li>
+                    Desarrollo de aplicaciones web para gestión de activos y
+                    mantenimiento
+                  </li>
+                  <li>
+                    Soporte técnico en hardware y software a áreas
+                    administrativas
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-            <img class="slide" src="screenshots/amauta/eventos-amautas.webp" alt="Sección de eventos del sitio de Amautas Mineros" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Eventos</span></div>
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <div class="dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-duration">1 año 11 meses</div>
+                <div class="timeline-period">2023 — 2025</div>
+                <div class="timeline-role">Asistente de Sistemas</div>
+                <div class="timeline-company">Clínica Jesús del Norte</div>
+                <ul class="timeline-desc">
+                  <li>Representar al Equipo de TI ante diferentes áreas</li>
+                  <li>Responsable de pedidos de TIC (SAP GUI)</li>
+                  <li>Gestionar documentación de TI</li>
+                  <li>Soporte de aplicaciones web (PHP, MySql)</li>
+                  <li>
+                    Soporte de aplicaciones de escritorio (Power Builder,
+                    Oracle)
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-            <img class="slide" src="screenshots/amauta/correos-amautas.webp" alt="Módulo de correos del sitio de Amautas Mineros" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Correos</span></div>
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <div class="dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-duration">1 año 2 meses</div>
+                <div class="timeline-period">2022 — 2023</div>
+                <div class="timeline-role">Soporte Técnico</div>
+                <div class="timeline-company">Clínica Jesús del Norte</div>
+                <ul class="timeline-desc">
+                  <li>
+                    Soporte de mantenimiento y configuración (PC, Impresoras,
+                    Laptop)
+                  </li>
+                  <li>Soporte de accesos (Active Directory)</li>
+                </ul>
+              </div>
+            </div>
 
-            <img class="slide" src="screenshots/amauta/noticias-amautas.webp" alt="Sección de noticias del sitio de Amautas Mineros" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Noticias</span></div>
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <div class="dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-duration">6 meses</div>
+                <div class="timeline-period">2019 — 2020</div>
+                <div class="timeline-role">Analista Comercial</div>
+                <div class="timeline-company">Punto de Distribución</div>
+                <ul class="timeline-desc">
+                  <li>
+                    Presentar informes con cuadro de análisis de ventas (Excel)
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-            <img class="slide" src="screenshots/amauta/contacto-amautas.webp" alt="Formulario de contacto del sitio de Amautas Mineros" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Contacto</span></div>
-          </div>
-          <button type="button" class="carousel-btn prev" onclick="moveCarousel('carousel-1', -1)">❮</button>
-          <button type="button" class="carousel-btn next" onclick="moveCarousel('carousel-1', 1)">❯</button>
-          <div class="carousel-dots" id="dots-carousel-1">
-            <div class="carousel-dot active" onclick="goToSlide('carousel-1', 0)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-1', 1)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-1', 2)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-1', 3)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-1', 4)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-1', 5)"></div>
+            <div class="timeline-item">
+              <div class="timeline-dot">
+                <div class="dot"></div>
+              </div>
+              <div class="timeline-content">
+                <div class="timeline-duration">6 meses</div>
+                <div class="timeline-period">2019</div>
+                <div class="timeline-role">Asistente de Sistemas</div>
+                <div class="timeline-company">Punto de Distribución</div>
+                <ul class="timeline-desc">
+                  <li>Soporte de accesos (Active Directory)</li>
+                  <li>Soporte de aplicación de escritorio (Sql Server)</li>
+                  <li>Soporte de mantenimiento y configuración (PC)</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+        <button
+          type="button"
+          class="btn-secondary timeline-toggle"
+          id="timelineToggle"
+          aria-expanded="false"
+          aria-controls="timelineMore"
+        >
+          Ver experiencia anterior (5)
+        </button>
+      </section>
 
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-number">Proyecto 02</div>
-          <div class="project-name">Amautas Mineros — Bolsa de talentos</div>
-          <p class="project-desc">
-            El sistema permite administrar las carreras por región para poder contratar a ponteciales talentos.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">SCSS</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">PHPMailer</span>
+      <div class="divider"></div>
+
+      <!-- PORTAFOLIO -->
+      <section
+        id="portafolio"
+        class="fade-in"
+        style="max-width: 1200px; margin: 0 auto"
+      >
+        <div class="section-label">Trabajo</div>
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-desc">
+          Proyectos reales desarrollados con tecnologías modernas para clientes
+          reales.
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-number">Proyecto 01</div>
+              <div class="project-name">
+                Amautas Mineros — Web institucional
+              </div>
+              <p class="project-desc">
+                Realización web institucional. Estructura completa según la
+                solicitud del cliente, con integración de comunicación por
+                email.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">SCSS</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">PHPMailer</span>
+              </div>
+              <button type="button" class="project-link project-more">
+                Ver detalle →
+              </button>
+            </div>
+            <div class="project-visual">
+              <div class="carousel" id="carousel-1">
+                <img
+                  class="slide"
+                  src="screenshots/amauta/home-amautas.webp"
+                  alt="Página de inicio del sitio de Amautas Mineros"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Inicio</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/amauta/conocenos-amautas.webp"
+                  alt="Sección Conócenos del sitio de Amautas Mineros"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Conócenos</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/amauta/eventos-amautas.webp"
+                  alt="Sección de eventos del sitio de Amautas Mineros"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Eventos</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/amauta/correos-amautas.webp"
+                  alt="Módulo de correos del sitio de Amautas Mineros"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Correos</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/amauta/noticias-amautas.webp"
+                  alt="Sección de noticias del sitio de Amautas Mineros"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Noticias</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/amauta/contacto-amautas.webp"
+                  alt="Formulario de contacto del sitio de Amautas Mineros"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Contacto</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="carousel-btn prev"
+                onclick="moveCarousel('carousel-1', -1)"
+              >
+                ❮
+              </button>
+              <button
+                type="button"
+                class="carousel-btn next"
+                onclick="moveCarousel('carousel-1', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots" id="dots-carousel-1">
+                <div
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-1', 0)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-1', 1)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-1', 2)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-1', 3)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-1', 4)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-1', 5)"
+                ></div>
+              </div>
+            </div>
           </div>
-          <button type="button" class="project-link project-more">Ver detalle →</button>
-        </div>
-        <div class="project-visual">
-          <div class="carousel" id="carousel-2">
-            <img class="slide" src="screenshots/bolsa-amauta/inicio.webp" alt="Inicio de la bolsa de talentos de Amautas Mineros" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Inicio</span></div>
 
-            <img class="slide" src="screenshots/bolsa-amauta/carreras.webp" alt="Listado de carreras por región en la bolsa de talentos" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Carreras</span></div>
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-number">Proyecto 02</div>
+              <div class="project-name">
+                Amautas Mineros — Bolsa de talentos
+              </div>
+              <p class="project-desc">
+                El sistema permite administrar las carreras por región para
+                poder contratar a ponteciales talentos.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">SCSS</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">PHPMailer</span>
+              </div>
+              <button type="button" class="project-link project-more">
+                Ver detalle →
+              </button>
+            </div>
+            <div class="project-visual">
+              <div class="carousel" id="carousel-2">
+                <img
+                  class="slide"
+                  src="screenshots/bolsa-amauta/inicio.webp"
+                  alt="Inicio de la bolsa de talentos de Amautas Mineros"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Inicio</span>
+                </div>
 
-            <img class="slide" src="screenshots/bolsa-amauta/talentos_carrera.webp" alt="Talentos registrados por carrera" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Talentos por carrera</span></div>
+                <img
+                  class="slide"
+                  src="screenshots/bolsa-amauta/carreras.webp"
+                  alt="Listado de carreras por región en la bolsa de talentos"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Carreras</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/bolsa-amauta/talentos_carrera.webp"
+                  alt="Talentos registrados por carrera"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Talentos por carrera</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="carousel-btn prev"
+                onclick="moveCarousel('carousel-2', -1)"
+              >
+                ❮
+              </button>
+              <button
+                type="button"
+                class="carousel-btn next"
+                onclick="moveCarousel('carousel-2', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots" id="dots-carousel-2">
+                <div
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-2', 0)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 1)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-2', 2)"
+                ></div>
+              </div>
+            </div>
           </div>
-          <button type="button" class="carousel-btn prev" onclick="moveCarousel('carousel-2', -1)">❮</button>
-          <button type="button" class="carousel-btn next" onclick="moveCarousel('carousel-2', 1)">❯</button>
-          <div class="carousel-dots" id="dots-carousel-2">
-            <div class="carousel-dot active" onclick="goToSlide('carousel-2', 0)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-2', 1)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-2', 2)"></div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-number">Proyecto 03</div>
+              <div class="project-name">Multiservicios Sky</div>
+              <p class="project-desc">
+                Realización web comercial. Toda la estructura web según
+                solicitud del cliente, con sistema de contacto y catálogo de
+                servicios.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">PHPMailer</span>
+              </div>
+              <button type="button" class="project-link project-more">
+                Ver detalle →
+              </button>
+            </div>
+            <div class="project-visual">
+              <div class="carousel" id="carousel-3">
+                <img
+                  class="slide"
+                  src="screenshots/multiservicios/inicio.webp"
+                  alt="Página de inicio del sitio de Multiservicios Sky"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Inicio</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/multiservicios/nosotros.webp"
+                  alt="Sección Nosotros del sitio de Multiservicios Sky"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Nosotros</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/multiservicios/productos.webp"
+                  alt="Catálogo de productos de Multiservicios Sky"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Productos</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/multiservicios/detalle.webp"
+                  alt="Detalle de un producto de Multiservicios Sky"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Detalle de producto</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/multiservicios/servicios.webp"
+                  alt="Listado de servicios de Multiservicios Sky"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Servicios</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/multiservicios/contactanos.webp"
+                  alt="Formulario de contacto de Multiservicios Sky"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Contáctanos</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="carousel-btn prev"
+                onclick="moveCarousel('carousel-3', -1)"
+              >
+                ❮
+              </button>
+              <button
+                type="button"
+                class="carousel-btn next"
+                onclick="moveCarousel('carousel-3', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots" id="dots-carousel-3">
+                <div
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-3', 0)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-3', 1)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-3', 2)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-3', 3)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-3', 4)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-3', 5)"
+                ></div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-number">Proyecto 03</div>
-          <div class="project-name">Multiservicios Sky</div>
-          <p class="project-desc">
-            Realización web comercial. Toda la estructura web según solicitud del cliente,
-            con sistema de contacto y catálogo de servicios.
-          </p>
-          <div class="project-tech">
-            <span class="tech-tag">PHP</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">PHPMailer</span>
+          <div class="project-card">
+            <div class="project-header">
+              <div class="project-number">Proyecto 04</div>
+              <div class="project-name">Arissa Planner — Web de eventos</div>
+              <p class="project-desc">
+                Sitio web para una organizadora de eventos en Lima: catálogo de
+                servicios, galería de trabajos realizados y explicación del
+                proceso.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML 5</span>
+                <span class="tech-tag">CSS 3</span>
+                <span class="tech-tag">JAVASCRIPT</span>
+                <span class="tech-tag">FIGMA</span>
+              </div>
+              <button type="button" class="project-link project-more">
+                Ver detalle →
+              </button>
+            </div>
+            <div class="project-visual">
+              <div class="carousel" id="carousel-4">
+                <img
+                  class="slide"
+                  src="screenshots/arissa-planner/inicio.webp"
+                  alt="Portada del sitio de Arissa Planner"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Inicio</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/arissa-planner/servicios.webp"
+                  alt="Sección de servicios: decoración, eventos corporativos y organización"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Servicios</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/arissa-planner/galeria.webp"
+                  alt="Galería de eventos realizados"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Galería</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/arissa-planner/clientes.webp"
+                  alt="Sección de clientes de Arissa Planner"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Clientes</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/arissa-planner/pasos.webp"
+                  alt="Cómo trabajamos: los tres pasos del servicio"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Cómo trabajamos</span>
+                </div>
+
+                <img
+                  class="slide"
+                  src="screenshots/arissa-planner/footer.webp"
+                  alt="Pie de página con contacto y redes"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'flex';
+                  "
+                />
+                <div class="slide-placeholder" style="display: none">
+                  ☁️<span>Contacto</span>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="carousel-btn prev"
+                onclick="moveCarousel('carousel-4', -1)"
+              >
+                ❮
+              </button>
+              <button
+                type="button"
+                class="carousel-btn next"
+                onclick="moveCarousel('carousel-4', 1)"
+              >
+                ❯
+              </button>
+              <div class="carousel-dots" id="dots-carousel-4">
+                <div
+                  class="carousel-dot active"
+                  onclick="goToSlide('carousel-4', 0)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-4', 1)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-4', 2)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-4', 3)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-4', 4)"
+                ></div>
+                <div
+                  class="carousel-dot"
+                  onclick="goToSlide('carousel-4', 5)"
+                ></div>
+              </div>
+            </div>
           </div>
-          <button type="button" class="project-link project-more">Ver detalle →</button>
-        </div>
-        <div class="project-visual">
-          <div class="carousel" id="carousel-3">
-            <img class="slide" src="screenshots/multiservicios/inicio.webp" alt="Página de inicio del sitio de Multiservicios Sky" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Inicio</span></div>
 
-            <img class="slide" src="screenshots/multiservicios/nosotros.webp" alt="Sección Nosotros del sitio de Multiservicios Sky" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Nosotros</span></div>
-
-            <img class="slide" src="screenshots/multiservicios/productos.webp" alt="Catálogo de productos de Multiservicios Sky" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Productos</span></div>
-
-            <img class="slide" src="screenshots/multiservicios/detalle.webp" alt="Detalle de un producto de Multiservicios Sky" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Detalle de producto</span></div>
-
-            <img class="slide" src="screenshots/multiservicios/servicios.webp" alt="Listado de servicios de Multiservicios Sky" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Servicios</span></div>
-
-            <img class="slide" src="screenshots/multiservicios/contactanos.webp" alt="Formulario de contacto de Multiservicios Sky" loading="lazy"
-              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-              <div class="slide-placeholder" style="display:none">☁️<span>Contáctanos</span></div>
-          </div>
-          <button type="button" class="carousel-btn prev" onclick="moveCarousel('carousel-3', -1)">❮</button>
-          <button type="button" class="carousel-btn next" onclick="moveCarousel('carousel-3', 1)">❯</button>
-          <div class="carousel-dots" id="dots-carousel-3">
-            <div class="carousel-dot active" onclick="goToSlide('carousel-3', 0)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-3', 1)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-3', 2)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-3', 3)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-3', 4)"></div>
-            <div class="carousel-dot" onclick="goToSlide('carousel-3', 5)"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="project-card">
+          <!-- <div class="project-card">
         <div class="project-header">
           <div class="project-number">Proyecto 04</div>
           <div class="project-name">Transber</div>
@@ -671,425 +1297,660 @@
         </div>
         <div class="project-visual">☁️</div>
       </div> -->
-
-    </div>
-
-    <!-- Trabajo que no se puede mostrar con capturas -->
-    <div class="private-work">
-      <h3 class="private-title">Otros trabajos</h3>
-      <p class="private-note">Sistemas privados de clientes: por confidencialidad no muestro nombres ni capturas.</p>
-      <div class="private-grid">
-        <div class="private-item">
-          <div class="private-number">15+</div>
-          <div class="private-name">Mejoras a sistemas en producción</div>
-          <p class="private-desc">Solo en 2026: corrección de errores, nuevos módulos y ajustes en sistemas que las
-            empresas ya usaban.</p>
         </div>
-        <div class="private-item">
-          <div class="private-number">🔄</div>
-          <div class="private-name">Actualización de sitios WordPress y Joomla</div>
-          <p class="private-desc">Puesta al día de sitios existentes para que sigan funcionando de forma segura.</p>
-        </div>
-        <div class="private-item">
-          <div class="private-number">🌐</div>
-          <div class="private-name">Asesoría en redes y servidores</div>
-          <p class="private-desc">Acompañamiento externo a una empresa en la organización de su red y sus servidores.
+
+        <!-- Trabajo que no se puede mostrar con capturas -->
+        <div class="private-work">
+          <h3 class="private-title">Otros trabajos</h3>
+          <p class="private-note">
+            Sistemas privados de clientes: por confidencialidad no muestro
+            nombres ni capturas.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- CLIENTES -->
-  <section id="clientes" class="fade-in" style="max-width:1200px;margin:0 auto;">
-    <div class="section-label">Clientes</div>
-    <h2 class="section-title">Empresas que confiaron en mi trabajo</h2>
-    <!-- Bucle infinito: la lista se repite 3 veces para que el desplazamiento no deje huecos.
-         Las copias 2 y 3 son decorativas (aria-hidden) para que los lectores de pantalla no lean 3 veces. -->
-    <div class="clients-marquee">
-      <ul class="clients-track">
-        <li class="client-item">
-          <div class="client-logo"><img src="img/clientes/banquea.png" alt="Logo de Banquea"></div>
-          <span>Banquea</span>
-        </li>
-        <li class="client-item">
-          <div class="client-logo"><img src="img/clientes/multiservicios-sky.png" alt="Logo de Multiservicios Sky">
+          <div class="private-grid">
+            <div class="private-item">
+              <div class="private-number">15+</div>
+              <div class="private-name">Mejoras a sistemas en producción</div>
+              <p class="private-desc">
+                Solo en 2026: corrección de errores, nuevos módulos y ajustes en
+                sistemas que las empresas ya usaban.
+              </p>
+            </div>
+            <div class="private-item">
+              <div class="private-number">🔄</div>
+              <div class="private-name">
+                Actualización de sitios WordPress y Joomla
+              </div>
+              <p class="private-desc">
+                Puesta al día de sitios existentes para que sigan funcionando de
+                forma segura.
+              </p>
+            </div>
+            <div class="private-item">
+              <div class="private-number">🌐</div>
+              <div class="private-name">Asesoría en redes y servidores</div>
+              <p class="private-desc">
+                Acompañamiento externo a una empresa en la organización de su
+                red y sus servidores.
+              </p>
+            </div>
           </div>
-          <span>Multiservicios Sky</span>
-        </li>
-        <li class="client-item">
-          <div class="client-logo"><img src="img/clientes/amautas-mineros.png" alt="Logo de Amautas Mineros"></div>
-          <span>Amautas Mineros</span>
-        </li>
-        <li class="client-item">
-          <div class="client-logo"><img src="img/clientes/pijorce.png" alt="Logo de Pijorce"></div>
-          <span>PIJORCE</span>
-        </li>
-        <li class="client-item">
-          <div class="client-logo"><img src="img/clientes/rywnago.png" alt="Logo de Rywnago"></div>
-          <span>R y W Nago</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/banquea.png" alt=""></div>
-          <span>Banquea</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/multiservicios-sky.png" alt=""></div>
-          <span>Multiservicios Sky</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/amautas-mineros.png" alt=""></div>
-          <span>Amautas Mineros</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/pijorce.png" alt=""></div>
-          <span>PIJORCE</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/rywnago.png" alt=""></div>
-          <span>R y W Nago</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/banquea.png" alt=""></div>
-          <span>Banquea</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/multiservicios-sky.png" alt=""></div>
-          <span>Multiservicios Sky</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/amautas-mineros.png" alt=""></div>
-          <span>Amautas Mineros</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/pijorce.png" alt=""></div>
-          <span>PIJORCE</span>
-        </li>
-        <li class="client-item" aria-hidden="true">
-          <div class="client-logo"><img src="img/clientes/rywnago.png" alt=""></div>
-          <span>R y W Nago</span>
-        </li>
-      </ul>
-    </div>
-  </section>
+        </div>
+      </section>
 
-  <div class="divider"></div>
+      <div class="divider"></div>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="fade-in" style="max-width:700px;margin:0 auto;text-align:center;">
-    <div class="section-label" style="justify-content:center;">Contacto</div>
-    <h2 class="section-title">¿Trabajamos juntos?</h2>
-    <p class="section-desc" style="margin:0 auto;">
-      Cuéntame qué necesita tu sistema o tu página. Reviso lo que tienes, te digo qué encuentro
-      y recién entonces hablamos de tiempos y costo.
-    </p>
-    <div class="contact-card">
-      <p style="color:var(--text-muted);font-size:1rem;line-height:1.8;margin-bottom:1.5rem;">
-        La primera conversación no tiene costo ni compromiso. Escríbeme por WhatsApp y te respondo
-        el mismo día.
-      </p>
-      <a class="btn-whatsapp"
-        href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20vi%20tu%20web%20y%20necesito%20ayuda%20con%20mi%20sistema."
-        target="_blank" rel="noopener">
-        <svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-          <path
-            d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-        </svg>
-        Escribir por WhatsApp
-      </a>
-      <!-- Formulario gestionado por Netlify: data-netlify + campo oculto form-name.
-           netlify-honeypot crea una trampa anti-spam invisible para personas. -->
-      <div class="contact-form-wrap">
-        <p class="contact-form-title">¿Prefieres escribirme por correo?</p>
-        <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field"
-          action="/gracias" class="contact-form">
-          <input type="hidden" name="form-name" value="contacto">
-          <p class="hidden-field">
-            <label>No llenar este campo: <input name="bot-field"></label>
+      <!-- CLIENTES -->
+      <section
+        id="clientes"
+        class="fade-in"
+        style="max-width: 1200px; margin: 0 auto"
+      >
+        <div class="section-label">Clientes</div>
+        <h2 class="section-title">Empresas que confiaron en mi trabajo</h2>
+        <!-- Bucle infinito: la lista se repite 3 veces para que el desplazamiento no deje huecos.
+         Las copias 2 y 3 son decorativas (aria-hidden) para que los lectores de pantalla no lean 3 veces. -->
+        <div class="clients-marquee">
+          <ul class="clients-track">
+            <li class="client-item">
+              <div class="client-logo">
+                <img src="img/clientes/banquea.png" alt="Logo de Banquea" />
+              </div>
+              <span>Banquea</span>
+            </li>
+            <li class="client-item">
+              <div class="client-logo">
+                <img
+                  src="img/clientes/multiservicios-sky.png"
+                  alt="Logo de Multiservicios Sky"
+                />
+              </div>
+              <span>Multiservicios Sky</span>
+            </li>
+            <li class="client-item">
+              <div class="client-logo">
+                <img
+                  src="img/clientes/amautas-mineros.png"
+                  alt="Logo de Amautas Mineros"
+                />
+              </div>
+              <span>Amautas Mineros</span>
+            </li>
+            <li class="client-item">
+              <div class="client-logo">
+                <img src="img/clientes/pijorce.png" alt="Logo de Pijorce" />
+              </div>
+              <span>PIJORCE</span>
+            </li>
+            <li class="client-item">
+              <div class="client-logo">
+                <img src="img/clientes/rywnago.png" alt="Logo de Rywnago" />
+              </div>
+              <span>R y W Nago</span>
+            </li>
+            <li class="client-item">
+              <div class="client-logo">
+                <img
+                  src="img/clientes/arissa-planner.png"
+                  alt="Logo de Arissa Planner"
+                />
+              </div>
+              <span>Arissa Planner</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/banquea.png" alt="" />
+              </div>
+              <span>Banquea</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/multiservicios-sky.png" alt="" />
+              </div>
+              <span>Multiservicios Sky</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/amautas-mineros.png" alt="" />
+              </div>
+              <span>Amautas Mineros</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/pijorce.png" alt="" />
+              </div>
+              <span>PIJORCE</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/rywnago.png" alt="" />
+              </div>
+              <span>R y W Nago</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/arissa-planner.png" alt="" />
+              </div>
+              <span>Arissa Planner</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/banquea.png" alt="" />
+              </div>
+              <span>Banquea</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/multiservicios-sky.png" alt="" />
+              </div>
+              <span>Multiservicios Sky</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/amautas-mineros.png" alt="" />
+              </div>
+              <span>Amautas Mineros</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/pijorce.png" alt="" />
+              </div>
+              <span>PIJORCE</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/rywnago.png" alt="" />
+              </div>
+              <span>R y W Nago</span>
+            </li>
+            <li class="client-item" aria-hidden="true">
+              <div class="client-logo">
+                <img src="img/clientes/arissa-planner.png" alt="" />
+              </div>
+              <span>Arissa Planner</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="divider"></div>
+
+      <!-- CONTACTO -->
+      <section
+        id="contacto"
+        class="fade-in"
+        style="max-width: 700px; margin: 0 auto; text-align: center"
+      >
+        <div class="section-label" style="justify-content: center">
+          Contacto
+        </div>
+        <h2 class="section-title">¿Trabajamos juntos?</h2>
+        <p class="section-desc" style="margin: 0 auto">
+          Cuéntame qué necesita tu sistema o tu página. Reviso lo que tienes, te
+          digo qué encuentro y recién entonces hablamos de tiempos y costo.
+        </p>
+        <div class="contact-card">
+          <p
+            style="
+              color: var(--text-muted);
+              font-size: 1rem;
+              line-height: 1.8;
+              margin-bottom: 1.5rem;
+            "
+          >
+            La primera conversación no tiene costo ni compromiso. Escríbeme por
+            WhatsApp y te respondo el mismo día.
           </p>
-          <label for="f-nombre">Nombre</label>
-          <input id="f-nombre" name="nombre" type="text" required autocomplete="name" placeholder="Tu nombre o el de tu empresa">
+          <a
+            class="btn-whatsapp"
+            href="https://wa.me/51970838672?text=Hola%20Kevin%2C%20vi%20tu%20web%20y%20necesito%20ayuda%20con%20mi%20sistema."
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+            Escribir por WhatsApp
+          </a>
+          <!-- Formulario gestionado por Netlify: data-netlify + campo oculto form-name.
+           netlify-honeypot crea una trampa anti-spam invisible para personas. -->
+          <div class="contact-form-wrap">
+            <p class="contact-form-title">¿Prefieres escribirme por correo?</p>
+            <form
+              name="contacto"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+              action="/gracias"
+              class="contact-form"
+            >
+              <input type="hidden" name="form-name" value="contacto" />
+              <p class="hidden-field">
+                <label>No llenar este campo: <input name="bot-field" /></label>
+              </p>
+              <label for="f-nombre">Nombre</label>
+              <input
+                id="f-nombre"
+                name="nombre"
+                type="text"
+                required
+                autocomplete="name"
+                placeholder="Tu nombre o el de tu empresa"
+              />
 
-          <label for="f-contacto">Correo o WhatsApp</label>
-          <input id="f-contacto" name="correo" type="text" required autocomplete="email" placeholder="correo@empresa.com o 9XX XXX XXX">
+              <label for="f-contacto">Correo o WhatsApp</label>
+              <input
+                id="f-contacto"
+                name="correo"
+                type="text"
+                required
+                autocomplete="email"
+                placeholder="correo@empresa.com o 9XX XXX XXX"
+              />
 
-          <label for="f-mensaje">¿Qué necesitas?</label>
-          <textarea id="f-mensaje" name="mensaje" rows="4" required placeholder="Cuéntame qué hace tu sistema hoy y qué problema tiene."></textarea>
+              <label for="f-mensaje">¿Qué necesitas?</label>
+              <textarea
+                id="f-mensaje"
+                name="mensaje"
+                rows="4"
+                required
+                placeholder="Cuéntame qué hace tu sistema hoy y qué problema tiene."
+              ></textarea>
 
-          <button type="submit" class="btn-form">Enviar mensaje</button>
-          <p class="form-note">Te respondo el mismo día. No comparto tus datos con nadie.</p>
-        </form>
-      </div>
+              <button type="submit" class="btn-form">Enviar mensaje</button>
+              <p class="form-note">
+                Te respondo el mismo día. No comparto tus datos con nadie.
+              </p>
+            </form>
+          </div>
 
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/torresarista99/" class="contact-link linkedin" target="_blank">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-          </svg>
-          LinkedIn
-        </a>
-        <a href="https://github.com/arista99" class="contact-link github" target="_blank">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-            <path
-              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-          </svg>
-          GitHub
-        </a>
-        <a href="https://wa.me/51970838672?text=Hola%20quiero%20información" class="contact-link phone" target="_blank">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
-            viewBox="0 0 16 16">
-            <path
-              d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-          </svg>
-          970 838 672
-        </a>
-      </div>
-    </div>
-  </section>
+          <div class="contact-links">
+            <a
+              href="https://www.linkedin.com/in/torresarista99/"
+              class="contact-link linkedin"
+              target="_blank"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/arista99"
+              class="contact-link github"
+              target="_blank"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+              GitHub
+            </a>
+            <a
+              href="https://wa.me/51970838672?text=Hola%20quiero%20información"
+              class="contact-link phone"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-whatsapp"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+                />
+              </svg>
+              970 838 672
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
-  </main>
-
-  <!-- MODAL DETALLE DE PROYECTO: se llena con JS desde la tarjeta que lo abre.
+    <!-- MODAL DETALLE DE PROYECTO: se llena con JS desde la tarjeta que lo abre.
        Para agregar características o resultados a un proyecto, pon dentro de su .project-card
        un <div class="project-extra" hidden>...</div>; su contenido aparece en el modal. -->
-  <dialog class="project-modal" id="projectModal" aria-labelledby="pmTitle">
-    <div class="pm-header">
-      <h3 class="pm-title" id="pmTitle"></h3>
-      <button type="button" class="pm-close" aria-label="Cerrar detalle">✕</button>
-    </div>
-    <div class="pm-body">
-      <div class="pm-gallery"></div>
-      <h4 class="pm-heading">Descripción del proyecto</h4>
-      <p class="pm-desc"></p>
-      <div class="pm-extra"></div>
-      <h4 class="pm-heading">Tecnologías</h4>
-      <div class="project-tech pm-tech"></div>
-      <div class="pm-actions">
-        <a class="btn-whatsapp pm-wa" href="https://wa.me/51970838672" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" /></svg> Quiero algo así para mi negocio</a>
+    <dialog class="project-modal" id="projectModal" aria-labelledby="pmTitle">
+      <div class="pm-header">
+        <h3 class="pm-title" id="pmTitle"></h3>
+        <button type="button" class="pm-close" aria-label="Cerrar detalle">
+          ✕
+        </button>
       </div>
-    </div>
-  </dialog>
+      <div class="pm-body">
+        <div class="pm-gallery"></div>
+        <h4 class="pm-heading">Descripción del proyecto</h4>
+        <p class="pm-desc"></p>
+        <div class="pm-extra"></div>
+        <h4 class="pm-heading">Tecnologías</h4>
+        <div class="project-tech pm-tech"></div>
+        <div class="pm-actions">
+          <a
+            class="btn-whatsapp pm-wa"
+            href="https://wa.me/51970838672"
+            target="_blank"
+            rel="noopener"
+            ><svg
+              width="18"
+              height="18"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              />
+            </svg>
+            Quiero algo así para mi negocio</a
+          >
+        </div>
+      </div>
+    </dialog>
 
-  <!-- VISOR AMPLIADO de las capturas del modal -->
-  <dialog class="lightbox" id="lightbox" aria-label="Captura ampliada">
-    <div class="lb-stage">
-      <figure class="lb-figure">
-        <img class="lb-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
-        <figcaption class="lb-caption"></figcaption>
-      </figure>
-    </div>
-    <button type="button" class="lb-close" aria-label="Cerrar imagen">✕</button>
-    <button type="button" class="lb-nav lb-prev" aria-label="Captura anterior">‹</button>
-    <button type="button" class="lb-nav lb-next" aria-label="Captura siguiente">›</button>
-    <div class="lb-counter" aria-live="polite"></div>
-  </dialog>
+    <!-- VISOR AMPLIADO de las capturas del modal -->
+    <dialog class="lightbox" id="lightbox" aria-label="Captura ampliada">
+      <div class="lb-stage">
+        <figure class="lb-figure">
+          <img
+            class="lb-img"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            alt=""
+          />
+          <figcaption class="lb-caption"></figcaption>
+        </figure>
+      </div>
+      <button type="button" class="lb-close" aria-label="Cerrar imagen">
+        ✕
+      </button>
+      <button
+        type="button"
+        class="lb-nav lb-prev"
+        aria-label="Captura anterior"
+      >
+        ‹
+      </button>
+      <button
+        type="button"
+        class="lb-nav lb-next"
+        aria-label="Captura siguiente"
+      >
+        ›
+      </button>
+      <div class="lb-counter" aria-live="polite"></div>
+    </dialog>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>Diseñado & desarrollado por <span>Kevin Torres Arista</span> · <span id="currentYear"></span></p>
-  </footer>
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        Diseñado & desarrollado por <span>Kevin Torres Arista</span> ·
+        <span id="currentYear"></span>
+      </p>
+    </footer>
 
-  <script>
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    <script>
+      document.getElementById("currentYear").textContent =
+        new Date().getFullYear();
 
-    /* ── Menú móvil ── */
-    const navToggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
-    const navBackdrop = document.getElementById('navBackdrop');
+      /* ── Menú móvil ── */
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+      const navBackdrop = document.getElementById("navBackdrop");
 
-    function setMenu(open) {
-      navToggle.setAttribute('aria-expanded', open);
-      navToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
-      navLinks.classList.toggle('open', open);
-      navBackdrop.classList.toggle('open', open);
-      document.body.classList.toggle('menu-open', open);
-    }
+      function setMenu(open) {
+        navToggle.setAttribute("aria-expanded", open);
+        navToggle.setAttribute(
+          "aria-label",
+          open ? "Cerrar menú" : "Abrir menú",
+        );
+        navLinks.classList.toggle("open", open);
+        navBackdrop.classList.toggle("open", open);
+        document.body.classList.toggle("menu-open", open);
+      }
 
-    navToggle.addEventListener('click', () => {
-      setMenu(navToggle.getAttribute('aria-expanded') !== 'true');
-    });
-
-    // Se cierra al elegir una sección, al tocar el fondo o con la tecla Escape
-    navLinks.addEventListener('click', e => {
-      if (e.target.tagName === 'A') setMenu(false);
-    });
-    navBackdrop.addEventListener('click', () => setMenu(false));
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') setMenu(false);
-    });
-
-    // Si se agranda la ventana, el menú vuelve a su estado normal
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 1140) setMenu(false);
-    });
-
-    // Intersection Observer for fade-in animations
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-    /* ── Experiencia anterior: mostrar / ocultar ── */
-    const tlToggle = document.getElementById('timelineToggle');
-    const tlMore = document.getElementById('timelineMore');
-    const tlCount = tlMore.querySelectorAll('.timeline-item').length;
-    tlToggle.textContent = `Ver experiencia anterior (${tlCount})`;
-    tlToggle.addEventListener('click', () => {
-      const open = tlMore.hidden;
-      tlMore.hidden = !open;
-      tlToggle.setAttribute('aria-expanded', open);
-      tlToggle.textContent = open ? 'Ocultar experiencia anterior' : `Ver experiencia anterior (${tlCount})`;
-      // Al ocultar, vuelve al inicio de la sección para no dejar al usuario más abajo
-      if (!open) document.getElementById('experiencia').scrollIntoView({ behavior: 'smooth' });
-    });
-
-    // Stagger timeline items
-    document.querySelectorAll('.timeline-item').forEach((item, i) => {
-      item.style.animationDelay = `${i * 0.15}s`;
-    });
-
-    const carouselState = {};
-
-    function getSlides(carouselId) {
-      const carousel = document.getElementById(carouselId);
-      // Cuenta solo elementos con clase "slide" (img) Y slide-placeholder visibles como unidades
-      // Mejor: cuenta pares — cada imagen + su placeholder forman 1 slide
-      const items = Array.from(carousel.children);
-      // Agrupamos: cada img + su siguiente div = 1 slide
-      const count = items.filter(el => el.tagName === 'IMG').length;
-      return { carousel, count };
-    }
-
-    function updateDots(carouselId, index) {
-      const dots = document.querySelectorAll(`#dots-${carouselId} .carousel-dot`);
-      dots.forEach((d, i) => d.classList.toggle('active', i === index));
-    }
-
-    function goToSlide(carouselId, index) {
-      const { carousel, count } = getSlides(carouselId);
-      if (!carouselState[carouselId]) carouselState[carouselId] = 0;
-      carouselState[carouselId] = Math.max(0, Math.min(index, count - 1));
-      carousel.style.transform = `translateX(-${carouselState[carouselId] * 100}%)`;
-      updateDots(carouselId, carouselState[carouselId]);
-    }
-
-    function moveCarousel(carouselId, dir) {
-      if (!carouselState[carouselId]) carouselState[carouselId] = 0;
-      const { count } = getSlides(carouselId);
-      let next = carouselState[carouselId] + dir;
-      if (next < 0) next = count - 1;
-      if (next >= count) next = 0;
-      goToSlide(carouselId, next);
-    }
-
-    /* ── Modal de detalle de proyecto ── */
-    const pm = document.getElementById('projectModal');
-    let pmImages = [];
-
-    function openProject(card) {
-      const name = card.querySelector('.project-name').textContent.trim();
-      pm.querySelector('.pm-title').textContent = name;
-      pm.querySelector('.pm-desc').textContent = card.querySelector('.project-desc').textContent.trim();
-      pm.querySelector('.pm-tech').innerHTML = card.querySelector('.project-tech').innerHTML;
-
-      // Galería: las mismas capturas del carrusel; la etiqueta aparece al pasar el mouse
-      const gallery = pm.querySelector('.pm-gallery');
-      gallery.innerHTML = '';
-      pmImages = [];
-      card.querySelectorAll('.carousel img.slide').forEach((img, i) => {
-        const item = {
-          src: img.getAttribute('src'),
-          alt: img.alt,
-          label: img.nextElementSibling?.querySelector('span')?.textContent || ''
-        };
-        pmImages.push(item);
-        const btn = document.createElement('button');
-        btn.type = 'button';
-        btn.className = 'pm-thumb';
-        btn.dataset.index = i;
-        btn.setAttribute('aria-label', `Ampliar captura: ${item.label}`);
-        btn.innerHTML = '<img loading="lazy"><span class="pm-thumb-label"></span>';
-        btn.querySelector('img').src = item.src;
-        btn.querySelector('img').alt = item.alt;
-        btn.querySelector('.pm-thumb-label').textContent = item.label;
-        gallery.appendChild(btn);
+      navToggle.addEventListener("click", () => {
+        setMenu(navToggle.getAttribute("aria-expanded") !== "true");
       });
 
-      const extra = card.querySelector('.project-extra');
-      pm.querySelector('.pm-extra').innerHTML = extra ? extra.innerHTML : '';
+      // Se cierra al elegir una sección, al tocar el fondo o con la tecla Escape
+      navLinks.addEventListener("click", (e) => {
+        if (e.target.tagName === "A") setMenu(false);
+      });
+      navBackdrop.addEventListener("click", () => setMenu(false));
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") setMenu(false);
+      });
 
-      pm.querySelector('.pm-wa').href = 'https://wa.me/51970838672?text=' +
-        encodeURIComponent(`Hola Kevin, vi tu proyecto "${name}" y quiero algo así para mi negocio.`);
+      // Si se agranda la ventana, el menú vuelve a su estado normal
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 1140) setMenu(false);
+      });
 
-      pm.querySelector('.pm-body').scrollTop = 0;
-      pm.showModal();
-      document.body.classList.add('modal-open');
-    }
+      // Intersection Observer for fade-in animations
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+            }
+          });
+        },
+        { threshold: 0.1 },
+      );
 
-    document.addEventListener('click', e => {
-      const trigger = e.target.closest('.project-more, .project-visual .slide');
-      if (trigger) openProject(trigger.closest('.project-card'));
-    });
-    pm.querySelector('.pm-close').addEventListener('click', () => pm.close());
-    // Clic en el fondo oscuro (fuera de la caja) también cierra
-    pm.addEventListener('click', e => { if (e.target === pm) pm.close(); });
-    pm.addEventListener('close', () => document.body.classList.remove('modal-open'));
+      document
+        .querySelectorAll(".fade-in")
+        .forEach((el) => observer.observe(el));
 
-    /* ── Visor ampliado de capturas (se abre encima del modal) ── */
-    const lb = document.getElementById('lightbox');
-    const lbImg = lb.querySelector('.lb-img');
-    let lbIndex = 0;
+      /* ── Experiencia anterior: mostrar / ocultar ── */
+      const tlToggle = document.getElementById("timelineToggle");
+      const tlMore = document.getElementById("timelineMore");
+      const tlCount = tlMore.querySelectorAll(".timeline-item").length;
+      tlToggle.textContent = `Ver experiencia anterior (${tlCount})`;
+      tlToggle.addEventListener("click", () => {
+        const open = tlMore.hidden;
+        tlMore.hidden = !open;
+        tlToggle.setAttribute("aria-expanded", open);
+        tlToggle.textContent = open
+          ? "Ocultar experiencia anterior"
+          : `Ver experiencia anterior (${tlCount})`;
+        // Al ocultar, vuelve al inicio de la sección para no dejar al usuario más abajo
+        if (!open)
+          document
+            .getElementById("experiencia")
+            .scrollIntoView({ behavior: "smooth" });
+      });
 
-    function showLb(i) {
-      lbIndex = (i + pmImages.length) % pmImages.length;
-      const item = pmImages[lbIndex];
-      lbImg.src = item.src;
-      lbImg.alt = item.alt;
-      lb.querySelector('.lb-caption').textContent = item.label;
-      lb.querySelector('.lb-counter').textContent = `${lbIndex + 1} de ${pmImages.length}`;
-      const multi = pmImages.length > 1;
-      lb.querySelector('.lb-prev').hidden = !multi;
-      lb.querySelector('.lb-next').hidden = !multi;
-    }
+      // Stagger timeline items
+      document.querySelectorAll(".timeline-item").forEach((item, i) => {
+        item.style.animationDelay = `${i * 0.15}s`;
+      });
 
-    pm.querySelector('.pm-gallery').addEventListener('click', e => {
-      const thumb = e.target.closest('.pm-thumb');
-      if (!thumb) return;
-      showLb(Number(thumb.dataset.index));
-      lb.showModal();
-    });
-    lb.querySelector('.lb-prev').addEventListener('click', () => showLb(lbIndex - 1));
-    lb.querySelector('.lb-next').addEventListener('click', () => showLb(lbIndex + 1));
-    lb.querySelector('.lb-close').addEventListener('click', () => lb.close());
-    // Clic fuera de la imagen cierra el visor (no el modal de atrás)
-    lb.addEventListener('click', e => { if (e.target === lb || e.target.classList.contains('lb-stage')) lb.close(); });
-    lb.addEventListener('keydown', e => {
-      if (e.key === 'ArrowLeft') showLb(lbIndex - 1);
-      if (e.key === 'ArrowRight') showLb(lbIndex + 1);
-    });
-    // Deslizar con el dedo en celular
-    let touchX = null;
-    lb.addEventListener('touchstart', e => { touchX = e.touches[0].clientX; }, { passive: true });
-    lb.addEventListener('touchend', e => {
-      if (touchX === null || pmImages.length < 2) return;
-      const dx = e.changedTouches[0].clientX - touchX;
-      if (Math.abs(dx) > 50) showLb(lbIndex + (dx < 0 ? 1 : -1));
-      touchX = null;
-    });
+      const carouselState = {};
 
-    // Auto-play suave cada 4s
-    setInterval(() => moveCarousel('carousel-1', 1), 4000);
-    setInterval(() => moveCarousel('carousel-2', 1), 4500);
-    setInterval(() => moveCarousel('carousel-3', 1), 5000);
-  </script>
-</body>
+      function getSlides(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        // Cuenta solo elementos con clase "slide" (img) Y slide-placeholder visibles como unidades
+        // Mejor: cuenta pares — cada imagen + su placeholder forman 1 slide
+        const items = Array.from(carousel.children);
+        // Agrupamos: cada img + su siguiente div = 1 slide
+        const count = items.filter((el) => el.tagName === "IMG").length;
+        return { carousel, count };
+      }
 
+      function updateDots(carouselId, index) {
+        const dots = document.querySelectorAll(
+          `#dots-${carouselId} .carousel-dot`,
+        );
+        dots.forEach((d, i) => d.classList.toggle("active", i === index));
+      }
+
+      function goToSlide(carouselId, index) {
+        const { carousel, count } = getSlides(carouselId);
+        if (!carouselState[carouselId]) carouselState[carouselId] = 0;
+        carouselState[carouselId] = Math.max(0, Math.min(index, count - 1));
+        carousel.style.transform = `translateX(-${carouselState[carouselId] * 100}%)`;
+        updateDots(carouselId, carouselState[carouselId]);
+      }
+
+      function moveCarousel(carouselId, dir) {
+        if (!carouselState[carouselId]) carouselState[carouselId] = 0;
+        const { count } = getSlides(carouselId);
+        let next = carouselState[carouselId] + dir;
+        if (next < 0) next = count - 1;
+        if (next >= count) next = 0;
+        goToSlide(carouselId, next);
+      }
+
+      /* ── Modal de detalle de proyecto ── */
+      const pm = document.getElementById("projectModal");
+      let pmImages = [];
+
+      function openProject(card) {
+        const name = card.querySelector(".project-name").textContent.trim();
+        pm.querySelector(".pm-title").textContent = name;
+        pm.querySelector(".pm-desc").textContent = card
+          .querySelector(".project-desc")
+          .textContent.trim();
+        pm.querySelector(".pm-tech").innerHTML =
+          card.querySelector(".project-tech").innerHTML;
+
+        // Galería: las mismas capturas del carrusel; la etiqueta aparece al pasar el mouse
+        const gallery = pm.querySelector(".pm-gallery");
+        gallery.innerHTML = "";
+        pmImages = [];
+        card.querySelectorAll(".carousel img.slide").forEach((img, i) => {
+          const item = {
+            src: img.getAttribute("src"),
+            alt: img.alt,
+            label:
+              img.nextElementSibling?.querySelector("span")?.textContent || "",
+          };
+          pmImages.push(item);
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "pm-thumb";
+          btn.dataset.index = i;
+          btn.setAttribute("aria-label", `Ampliar captura: ${item.label}`);
+          btn.innerHTML =
+            '<img loading="lazy"><span class="pm-thumb-label"></span>';
+          btn.querySelector("img").src = item.src;
+          btn.querySelector("img").alt = item.alt;
+          btn.querySelector(".pm-thumb-label").textContent = item.label;
+          gallery.appendChild(btn);
+        });
+
+        const extra = card.querySelector(".project-extra");
+        pm.querySelector(".pm-extra").innerHTML = extra ? extra.innerHTML : "";
+
+        pm.querySelector(".pm-wa").href =
+          "https://wa.me/51970838672?text=" +
+          encodeURIComponent(
+            `Hola Kevin, vi tu proyecto "${name}" y quiero algo así para mi negocio.`,
+          );
+
+        pm.querySelector(".pm-body").scrollTop = 0;
+        pm.showModal();
+        document.body.classList.add("modal-open");
+      }
+
+      document.addEventListener("click", (e) => {
+        const trigger = e.target.closest(
+          ".project-more, .project-visual .slide",
+        );
+        if (trigger) openProject(trigger.closest(".project-card"));
+      });
+      pm.querySelector(".pm-close").addEventListener("click", () => pm.close());
+      // Clic en el fondo oscuro (fuera de la caja) también cierra
+      pm.addEventListener("click", (e) => {
+        if (e.target === pm) pm.close();
+      });
+      pm.addEventListener("close", () =>
+        document.body.classList.remove("modal-open"),
+      );
+
+      /* ── Visor ampliado de capturas (se abre encima del modal) ── */
+      const lb = document.getElementById("lightbox");
+      const lbImg = lb.querySelector(".lb-img");
+      let lbIndex = 0;
+
+      function showLb(i) {
+        lbIndex = (i + pmImages.length) % pmImages.length;
+        const item = pmImages[lbIndex];
+        lbImg.src = item.src;
+        lbImg.alt = item.alt;
+        lb.querySelector(".lb-caption").textContent = item.label;
+        lb.querySelector(".lb-counter").textContent =
+          `${lbIndex + 1} de ${pmImages.length}`;
+        const multi = pmImages.length > 1;
+        lb.querySelector(".lb-prev").hidden = !multi;
+        lb.querySelector(".lb-next").hidden = !multi;
+      }
+
+      pm.querySelector(".pm-gallery").addEventListener("click", (e) => {
+        const thumb = e.target.closest(".pm-thumb");
+        if (!thumb) return;
+        showLb(Number(thumb.dataset.index));
+        lb.showModal();
+      });
+      lb.querySelector(".lb-prev").addEventListener("click", () =>
+        showLb(lbIndex - 1),
+      );
+      lb.querySelector(".lb-next").addEventListener("click", () =>
+        showLb(lbIndex + 1),
+      );
+      lb.querySelector(".lb-close").addEventListener("click", () => lb.close());
+      // Clic fuera de la imagen cierra el visor (no el modal de atrás)
+      lb.addEventListener("click", (e) => {
+        if (e.target === lb || e.target.classList.contains("lb-stage"))
+          lb.close();
+      });
+      lb.addEventListener("keydown", (e) => {
+        if (e.key === "ArrowLeft") showLb(lbIndex - 1);
+        if (e.key === "ArrowRight") showLb(lbIndex + 1);
+      });
+      // Deslizar con el dedo en celular
+      let touchX = null;
+      lb.addEventListener(
+        "touchstart",
+        (e) => {
+          touchX = e.touches[0].clientX;
+        },
+        { passive: true },
+      );
+      lb.addEventListener("touchend", (e) => {
+        if (touchX === null || pmImages.length < 2) return;
+        const dx = e.changedTouches[0].clientX - touchX;
+        if (Math.abs(dx) > 50) showLb(lbIndex + (dx < 0 ? 1 : -1));
+        touchX = null;
+      });
+
+      // Auto-play suave cada 4s
+      setInterval(() => moveCarousel("carousel-1", 1), 4000);
+      setInterval(() => moveCarousel("carousel-2", 1), 4500);
+      setInterval(() => moveCarousel("carousel-3", 1), 5000);
+    </script>
+  </body>
 </html>

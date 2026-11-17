@@ -855,6 +855,10 @@ section {
 }
 
 .project-card {
+    /* columna flexible: la captura ocupa el alto sobrante cuando la tarjeta
+       se estira para igualar a la de al lado (si no, queda un hueco oscuro) */
+    display: flex;
+    flex-direction: column;
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: 16px;
@@ -926,7 +930,10 @@ section {
 
 /* ── CARRUSEL ── */
 .project-visual {
-    height: 220px;
+    /* base 220px: el alto de la tarjeta no lo decide la imagen, pero el
+       espacio sobrante al estirarse la fila sí lo ocupa la captura */
+    flex: 1 1 220px;
+    min-height: 220px;
     border-top: 1px solid var(--border);
     position: relative;
     overflow: hidden;
